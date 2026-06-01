@@ -52,11 +52,13 @@ class DetectionNode(Node):
 
         self.create_subscription(Image, self.image_topic, self.on_image, 10)
         self.create_subscription(String, '/wakey/robot_state', self.on_state_change, 10)
+        self.create_timer(2.0, self.image_watchdog)
 
         self.robot_state = 'IDLE'
         self.background = None
         self.last_publish_time = 0.0
         self.last_debug_time = 0.0
+        self.last_image_time = 0.0
         self.last_image_encoding = None
 
         self.get_logger().info(
@@ -73,6 +75,8 @@ class DetectionNode(Node):
             self.get_logger().info('Alarm started. Published flee trigger.')
 
     def on_image(self, msg: Image):
+        self.last_image_time = self.get_clock().now().nanoseconds / 1e9
+
         if msg.encoding != self.last_image_encoding:
             self.last_image_encoding = msg.encoding
             self.get_logger().info(
@@ -112,6 +116,24 @@ class DetectionNode(Node):
         self.get_logger().info(
             f'User approach detected: direction={direction}, foreground={foreground_info}.'
         )
+
+    def image_watchdog(self):
+        now = self.get_clock().now().nanoseconds / 1e9
+        publisher_count = self.count_publishers(self.image_topic)
+
+        if self.last_image_time == 0.0:
+            self.get_logger().warn(
+                f'No images received yet from {self.image_topic}. '
+                f'ROS publishers on this topic: {publisher_count}.'
+            )
+            return
+
+        age = now - self.last_image_time
+        if age > 2.0:
+            self.get_logger().warn(
+                f'Last image from {self.image_topic} was {age:.1f}s ago. '
+                f'ROS publishers on this topic: {publisher_count}.'
+            )
 
     def log_detection_debug(self, direction, foreground_info):
         if self.debug_log_sec <= 0.0:
