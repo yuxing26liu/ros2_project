@@ -9,12 +9,11 @@ from std_msgs.msg import Bool, String
 
 class DetectionNode(Node):
     """
-    Detects user approach from a black-and-white DepthAI image stream.
+    Detects user approach from a DepthAI image stream.
 
-    The node learns a background while IDLE. When ALARMING starts, it
-    immediately tells the state machine to enter FLEEING. While FLEEING, it
-    publishes approach direction so flee_behavior can react to the user's
-    movement.
+    Depth images are preferred because they measure the thing the project
+    actually cares about: a user moving close to the robot. Mono/RGB images are
+    still supported as a background-subtraction fallback for demos.
     """
 
     DETECTION_STATES = {'ALARMING', 'FLEEING'}
@@ -22,23 +21,29 @@ class DetectionNode(Node):
     def __init__(self):
         super().__init__('detection_node')
 
-        self.declare_parameter('image_topic', '/oak/right/image_rect')
+        self.declare_parameter('image_topic', '/oak/stereo/image_raw')
         self.declare_parameter('difference_threshold', 35)
         self.declare_parameter('min_area_fraction', 0.08)
         self.declare_parameter('min_blob_pixels', 350)
-        self.declare_parameter('left_boundary_fraction', 0.40)
-        self.declare_parameter('right_boundary_fraction', 0.60)
         self.declare_parameter('background_alpha', 0.03)
         self.declare_parameter('publish_cooldown_sec', 1.0)
+        self.declare_parameter('approach_distance_m', 1.2)
+        self.declare_parameter('min_depth_mm', 200)
+        self.declare_parameter('max_depth_mm', 4000)
+        self.declare_parameter('depth_roi_top_fraction', 0.20)
+        self.declare_parameter('depth_roi_bottom_fraction', 0.85)
 
         self.image_topic = self.get_parameter('image_topic').value
         self.difference_threshold = int(self.get_parameter('difference_threshold').value)
         self.min_area_fraction = float(self.get_parameter('min_area_fraction').value)
         self.min_blob_pixels = int(self.get_parameter('min_blob_pixels').value)
-        self.left_boundary_fraction = float(self.get_parameter('left_boundary_fraction').value)
-        self.right_boundary_fraction = float(self.get_parameter('right_boundary_fraction').value)
         self.background_alpha = float(self.get_parameter('background_alpha').value)
         self.publish_cooldown_sec = float(self.get_parameter('publish_cooldown_sec').value)
+        self.approach_distance_m = float(self.get_parameter('approach_distance_m').value)
+        self.min_depth_mm = int(self.get_parameter('min_depth_mm').value)
+        self.max_depth_mm = int(self.get_parameter('max_depth_mm').value)
+        self.depth_roi_top_fraction = float(self.get_parameter('depth_roi_top_fraction').value)
+        self.depth_roi_bottom_fraction = float(self.get_parameter('depth_roi_bottom_fraction').value)
 
         self.flee_trigger_pub = self.create_publisher(Bool, '/wakey/flee_trigger', 10)
         self.direction_pub = self.create_publisher(String, '/wakey/user_direction', 10)
@@ -51,7 +56,7 @@ class DetectionNode(Node):
         self.last_publish_time = 0.0
 
         self.get_logger().info(
-            f'Detection node listening for mono images on {self.image_topic}.'
+            f'Detection node listening for images on {self.image_topic}.'
         )
 
     def on_state_change(self, msg: String):
@@ -64,17 +69,23 @@ class DetectionNode(Node):
             self.get_logger().info('Alarm started. Published flee trigger.')
 
     def on_image(self, msg: Image):
-        image = self.image_msg_to_grayscale(msg)
+        image, image_kind = self.image_msg_to_array(msg)
 
         if image is None:
             return
 
-        self.update_background(image)
+        if image_kind == 'depth':
+            detected, direction, foreground_info = self.detect_depth_approach(image)
+        else:
+            self.update_background(image)
 
-        if self.robot_state not in self.DETECTION_STATES or self.background is None:
+            if self.background is None:
+                return
+
+            detected, direction, foreground_info = self.detect_foreground(image)
+
+        if self.robot_state not in self.DETECTION_STATES:
             return
-
-        detected, direction, area_fraction = self.detect_foreground(image)
 
         if not detected:
             return
@@ -87,29 +98,39 @@ class DetectionNode(Node):
         self.publish_direction(direction)
 
         self.get_logger().info(
-            f'User approach detected: direction={direction}, foreground={area_fraction:.2%}.'
+            f'User approach detected: direction={direction}, foreground={foreground_info}.'
         )
 
-    def image_msg_to_grayscale(self, msg: Image):
+    def image_msg_to_array(self, msg: Image):
         if msg.height == 0 or msg.width == 0:
             self.get_logger().warn('Received empty image.')
-            return None
+            return None, None
+
+        if msg.encoding in ('16UC1', 'mono16'):
+            image = np.frombuffer(msg.data, dtype=np.uint16)
+            image = image.reshape((msg.height, msg.step // 2))[:, :msg.width]
+            return image, 'depth'
+
+        if msg.encoding == '32FC1':
+            image = np.frombuffer(msg.data, dtype=np.float32)
+            image = image.reshape((msg.height, msg.step // 4))[:, :msg.width]
+            return image, 'depth'
 
         if msg.encoding in ('mono8', '8UC1'):
             image = np.frombuffer(msg.data, dtype=np.uint8)
-            return image.reshape((msg.height, msg.step))[:, :msg.width].astype(np.float32)
+            return image.reshape((msg.height, msg.step))[:, :msg.width].astype(np.float32), 'intensity'
 
         if msg.encoding in ('rgb8', 'bgr8'):
             row_width = msg.width * 3
             image = np.frombuffer(msg.data, dtype=np.uint8)
             image = image.reshape((msg.height, msg.step))[:, :row_width]
             image = image.reshape((msg.height, msg.width, 3))
-            return image.mean(axis=2).astype(np.float32)
+            return image.mean(axis=2).astype(np.float32), 'intensity'
 
         self.get_logger().warn(
-            f'Unsupported image encoding {msg.encoding}. Expected mono8, 8UC1, rgb8, or bgr8.'
+            f'Unsupported image encoding {msg.encoding}. Expected 16UC1, 32FC1, mono8, 8UC1, rgb8, or bgr8.'
         )
-        return None
+        return None, None
 
     def update_background(self, image):
         if self.background is None or self.background.shape != image.shape:
@@ -137,17 +158,63 @@ class DetectionNode(Node):
         if not detected:
             return False, 'center', area_fraction
 
-        _, xs = np.nonzero(mask)
-        centroid_x_fraction = float(xs.mean()) / float(mask.shape[1])
+        direction = self.direction_from_region_counts(mask)
 
-        if centroid_x_fraction < self.left_boundary_fraction:
-            direction = 'left'
-        elif centroid_x_fraction > self.right_boundary_fraction:
-            direction = 'right'
+        return True, direction, f'{area_fraction:.2%}'
+
+    def detect_depth_approach(self, depth_image):
+        if depth_image.dtype.kind == 'f':
+            depth_mm = depth_image * 1000.0
         else:
-            direction = 'center'
+            depth_mm = depth_image
 
-        return True, direction, area_fraction
+        h, w = depth_mm.shape
+        y0 = int(h * self.depth_roi_top_fraction)
+        y1 = int(h * self.depth_roi_bottom_fraction)
+        roi = depth_mm[y0:y1, :]
+
+        regions = {
+            'left': roi[:, 0:w // 3],
+            'center': roi[:, w // 3:2 * w // 3],
+            'right': roi[:, 2 * w // 3:w],
+        }
+
+        region_distances = {}
+        for name, region in regions.items():
+            valid = region[
+                (region >= self.min_depth_mm)
+                & (region <= self.max_depth_mm)
+            ]
+            if valid.size:
+                region_distances[name] = float(np.percentile(valid, 10)) / 1000.0
+
+        if not region_distances:
+            return False, 'center', 'no valid depth'
+
+        direction = min(region_distances, key=region_distances.get)
+        nearest_m = region_distances[direction]
+        detected = nearest_m <= self.approach_distance_m
+
+        return detected, direction, f'nearest={nearest_m:.2f}m'
+
+    def direction_from_region_counts(self, mask):
+        h, w = mask.shape
+        y0 = int(h * self.depth_roi_top_fraction)
+        y1 = int(h * self.depth_roi_bottom_fraction)
+        roi = mask[y0:y1, :]
+
+        regions = {
+            'left': roi[:, 0:w // 3],
+            'center': roi[:, w // 3:2 * w // 3],
+            'right': roi[:, 2 * w // 3:w],
+        }
+        counts = {name: int(region.sum()) for name, region in regions.items()}
+        direction = max(counts, key=counts.get)
+
+        if counts[direction] == 0:
+            return 'center'
+
+        return direction
 
     def publish_flee_trigger(self, detected: bool):
         msg = Bool()

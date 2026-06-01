@@ -10,9 +10,8 @@ def generate_launch_description():
             package='wakey_wakey',
             executable='detection',
             parameters=[{
-                'image_topic': '/oak/right/image_rect',
-                'difference_threshold': 35,
-                'min_area_fraction': 0.08,
+                'image_topic': '/oak/stereo/image_raw',
+                'approach_distance_m': 1.2,
             }],
         ),
         Node(package='wakey_wakey', executable='wakefulness'),
