@@ -2,6 +2,10 @@ import rclpy
 from rclpy.node import Node
 
 import numpy as np
+try:
+    import cv2
+except ImportError:
+    cv2 = None
 
 from sensor_msgs.msg import Image
 from std_msgs.msg import Bool, String
@@ -12,8 +16,9 @@ class DetectionNode(Node):
     Detects user approach from a DepthAI image stream.
 
     Depth images are preferred because they measure the thing the project
-    actually cares about: a user moving close to the robot. Mono/RGB images are
-    still supported as a background-subtraction fallback for demos.
+    actually cares about: a user moving close to the robot. RGB color-marker
+    detection and mono/RGB background subtraction are supported as fallbacks for
+    demos when stereo depth is unreliable.
     """
 
     DETECTION_STATES = {'ALARMING', 'FLEEING'}
@@ -22,6 +27,7 @@ class DetectionNode(Node):
         super().__init__('detection_node')
 
         self.declare_parameter('image_topic', '/oak/stereo/image_raw')
+        self.declare_parameter('detection_mode', 'auto')
         self.declare_parameter('difference_threshold', 35)
         self.declare_parameter('min_area_fraction', 0.08)
         self.declare_parameter('min_blob_pixels', 350)
@@ -33,8 +39,13 @@ class DetectionNode(Node):
         self.declare_parameter('depth_roi_top_fraction', 0.20)
         self.declare_parameter('depth_roi_bottom_fraction', 0.85)
         self.declare_parameter('debug_log_sec', 1.0)
+        self.declare_parameter('hsv_lower_1', [0, 80, 50])
+        self.declare_parameter('hsv_upper_1', [15, 255, 255])
+        self.declare_parameter('hsv_lower_2', [165, 80, 50])
+        self.declare_parameter('hsv_upper_2', [179, 255, 255])
 
         self.image_topic = self.get_parameter('image_topic').value
+        self.detection_mode = self.get_parameter('detection_mode').value
         self.difference_threshold = int(self.get_parameter('difference_threshold').value)
         self.min_area_fraction = float(self.get_parameter('min_area_fraction').value)
         self.min_blob_pixels = int(self.get_parameter('min_blob_pixels').value)
@@ -46,6 +57,10 @@ class DetectionNode(Node):
         self.depth_roi_top_fraction = float(self.get_parameter('depth_roi_top_fraction').value)
         self.depth_roi_bottom_fraction = float(self.get_parameter('depth_roi_bottom_fraction').value)
         self.debug_log_sec = float(self.get_parameter('debug_log_sec').value)
+        self.hsv_lower_1 = self.hsv_parameter('hsv_lower_1')
+        self.hsv_upper_1 = self.hsv_parameter('hsv_upper_1')
+        self.hsv_lower_2 = self.hsv_parameter('hsv_lower_2')
+        self.hsv_upper_2 = self.hsv_parameter('hsv_upper_2')
 
         self.flee_trigger_pub = self.create_publisher(Bool, '/wakey/flee_trigger', 10)
         self.direction_pub = self.create_publisher(String, '/wakey/user_direction', 10)
@@ -62,8 +77,12 @@ class DetectionNode(Node):
         self.last_image_encoding = None
 
         self.get_logger().info(
-            f'Detection node listening for images on {self.image_topic}.'
+            f'Detection node listening for images on {self.image_topic} '
+            f'in {self.detection_mode} mode.'
         )
+
+        if self.detection_mode == 'color' and cv2 is None:
+            self.get_logger().error('OpenCV is not available. Color detection cannot run.')
 
     def on_state_change(self, msg: String):
         self.robot_state = msg.data
@@ -89,7 +108,9 @@ class DetectionNode(Node):
         if image is None:
             return
 
-        if image_kind == 'depth':
+        if self.should_use_color(image_kind):
+            detected, direction, foreground_info = self.detect_color_marker(image)
+        elif image_kind == 'depth':
             detected, direction, foreground_info = self.detect_depth_approach(image)
         else:
             self.update_background(image)
@@ -149,6 +170,10 @@ class DetectionNode(Node):
             f'threshold={self.approach_distance_m:.2f}m.'
         )
 
+    def hsv_parameter(self, name):
+        value = self.get_parameter(name).value
+        return np.array([int(part) for part in value], dtype=np.uint8)
+
     def image_msg_to_array(self, msg: Image):
         if msg.height == 0 or msg.width == 0:
             self.get_logger().warn('Received empty image.')
@@ -173,12 +198,21 @@ class DetectionNode(Node):
             image = np.frombuffer(msg.data, dtype=np.uint8)
             image = image.reshape((msg.height, msg.step))[:, :row_width]
             image = image.reshape((msg.height, msg.width, 3))
+
+            if self.detection_mode in ('auto', 'color'):
+                if msg.encoding == 'rgb8':
+                    image = image[:, :, ::-1]
+                return image, 'color'
+
             return image.mean(axis=2).astype(np.float32), 'intensity'
 
         self.get_logger().warn(
             f'Unsupported image encoding {msg.encoding}. Expected 16UC1, 32FC1, mono8, 8UC1, rgb8, or bgr8.'
         )
         return None, None
+
+    def should_use_color(self, image_kind):
+        return image_kind == 'color' and cv2 is not None
 
     def update_background(self, image):
         if self.background is None or self.background.shape != image.shape:
@@ -209,6 +243,28 @@ class DetectionNode(Node):
         direction = self.direction_from_region_counts(mask)
 
         return True, direction, f'{area_fraction:.2%}'
+
+    def detect_color_marker(self, bgr_image):
+        if cv2 is None:
+            return False, 'center', 'opencv unavailable'
+
+        hsv = cv2.cvtColor(bgr_image, cv2.COLOR_BGR2HSV)
+        mask_1 = cv2.inRange(hsv, self.hsv_lower_1, self.hsv_upper_1)
+        mask_2 = cv2.inRange(hsv, self.hsv_lower_2, self.hsv_upper_2)
+        mask = (mask_1 > 0) | (mask_2 > 0)
+
+        blob_pixels = int(mask.sum())
+        area_fraction = blob_pixels / float(mask.size)
+        detected = (
+            area_fraction >= self.min_area_fraction
+            and blob_pixels >= self.min_blob_pixels
+        )
+
+        if not detected:
+            return False, 'center', f'color_area={area_fraction:.2%}'
+
+        direction = self.direction_from_region_counts(mask)
+        return True, direction, f'color_area={area_fraction:.2%}'
 
     def detect_depth_approach(self, depth_image):
         if depth_image.dtype.kind == 'f':
