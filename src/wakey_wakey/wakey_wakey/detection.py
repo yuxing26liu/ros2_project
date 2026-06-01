@@ -32,6 +32,7 @@ class DetectionNode(Node):
         self.declare_parameter('max_depth_mm', 4000)
         self.declare_parameter('depth_roi_top_fraction', 0.20)
         self.declare_parameter('depth_roi_bottom_fraction', 0.85)
+        self.declare_parameter('debug_log_sec', 1.0)
 
         self.image_topic = self.get_parameter('image_topic').value
         self.difference_threshold = int(self.get_parameter('difference_threshold').value)
@@ -44,6 +45,7 @@ class DetectionNode(Node):
         self.max_depth_mm = int(self.get_parameter('max_depth_mm').value)
         self.depth_roi_top_fraction = float(self.get_parameter('depth_roi_top_fraction').value)
         self.depth_roi_bottom_fraction = float(self.get_parameter('depth_roi_bottom_fraction').value)
+        self.debug_log_sec = float(self.get_parameter('debug_log_sec').value)
 
         self.flee_trigger_pub = self.create_publisher(Bool, '/wakey/flee_trigger', 10)
         self.direction_pub = self.create_publisher(String, '/wakey/user_direction', 10)
@@ -54,6 +56,8 @@ class DetectionNode(Node):
         self.robot_state = 'IDLE'
         self.background = None
         self.last_publish_time = 0.0
+        self.last_debug_time = 0.0
+        self.last_image_encoding = None
 
         self.get_logger().info(
             f'Detection node listening for images on {self.image_topic}.'
@@ -69,6 +73,13 @@ class DetectionNode(Node):
             self.get_logger().info('Alarm started. Published flee trigger.')
 
     def on_image(self, msg: Image):
+        if msg.encoding != self.last_image_encoding:
+            self.last_image_encoding = msg.encoding
+            self.get_logger().info(
+                f'Receiving {msg.encoding} images from {self.image_topic} '
+                f'at {msg.width}x{msg.height}.'
+            )
+
         image, image_kind = self.image_msg_to_array(msg)
 
         if image is None:
@@ -88,6 +99,7 @@ class DetectionNode(Node):
             return
 
         if not detected:
+            self.log_detection_debug(direction, foreground_info)
             return
 
         now = self.get_clock().now().nanoseconds / 1e9
@@ -99,6 +111,20 @@ class DetectionNode(Node):
 
         self.get_logger().info(
             f'User approach detected: direction={direction}, foreground={foreground_info}.'
+        )
+
+    def log_detection_debug(self, direction, foreground_info):
+        if self.debug_log_sec <= 0.0:
+            return
+
+        now = self.get_clock().now().nanoseconds / 1e9
+        if now - self.last_debug_time < self.debug_log_sec:
+            return
+
+        self.last_debug_time = now
+        self.get_logger().info(
+            f'No approach yet: direction={direction}, foreground={foreground_info}, '
+            f'threshold={self.approach_distance_m:.2f}m.'
         )
 
     def image_msg_to_array(self, msg: Image):

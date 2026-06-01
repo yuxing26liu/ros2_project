@@ -2,6 +2,7 @@
 
 import time
 
+import numpy as np
 import rclpy
 from rclpy.node import Node
 
@@ -10,11 +11,13 @@ from std_msgs.msg import Bool, String
 
 
 class WakeyDemoDriver(Node):
+    IMAGE_TOPIC = '/oak/stereo/image_raw'
+
     def __init__(self):
         super().__init__('wakey_demo_driver')
 
         self.start_alarm_pub = self.create_publisher(Bool, '/wakey/start_alarm', 10)
-        self.image_pub = self.create_publisher(Image, '/oak/right/image_rect', 10)
+        self.image_pub = self.create_publisher(Image, self.IMAGE_TOPIC, 10)
 
         self.create_subscription(String, '/wakey/robot_state', self.on_state, 10)
 
@@ -29,33 +32,43 @@ class WakeyDemoDriver(Node):
             self.state = msg.data
             self.get_logger().info(f'FSM state = {self.state}')
 
-    def make_image(self, blob=False):
+    def make_depth_image(self, direction=None):
         width = 160
         height = 120
-        data = bytearray(width * height)
+        depth_mm = np.full((height, width), 3000, dtype=np.uint16)
 
-        if blob:
-            # Bright blob on left side. Detection should publish direction='left'.
-            for y in range(25, 95):
-                for x in range(5, 65):
-                    data[y * width + x] = 255
+        if direction is not None:
+            x_ranges = {
+                'left': (5, 55),
+                'center': (55, 105),
+                'right': (105, 155),
+            }
+            x0, x1 = x_ranges[direction]
+            depth_mm[25:95, x0:x1] = 650
 
         msg = Image()
         msg.header.stamp = self.get_clock().now().to_msg()
         msg.height = height
         msg.width = width
-        msg.encoding = 'mono8'
+        msg.encoding = '16UC1'
         msg.is_bigendian = 0
-        msg.step = width
-        msg.data = bytes(data)
+        msg.step = width * 2
+        msg.data = depth_mm.tobytes()
         return msg
+
+    def demo_direction(self, elapsed):
+        if elapsed < 4.0:
+            return 'left'
+        if elapsed < 6.0:
+            return 'center'
+        return 'right'
 
     def tick(self):
         elapsed = time.time() - self.start_time
 
-        # First publish clean background frames while FSM is IDLE.
+        # First publish far depth frames while FSM is IDLE.
         if elapsed < 2.0:
-            self.image_pub.publish(self.make_image(blob=False))
+            self.image_pub.publish(self.make_depth_image())
             return
 
         # Trigger alarm once.
@@ -66,9 +79,9 @@ class WakeyDemoDriver(Node):
             self.started = True
             self.get_logger().info('Published /wakey/start_alarm = True')
 
-        # Keep publishing foreground blob so detection can trigger FLEEING.
+        # Keep publishing a close depth blob so detection can report direction.
         if elapsed < 8.0:
-            self.image_pub.publish(self.make_image(blob=True))
+            self.image_pub.publish(self.make_depth_image(self.demo_direction(elapsed)))
             return
 
         self.get_logger().info('Demo driver done. Now use wakefulness touch sensors to enter GAME.')
