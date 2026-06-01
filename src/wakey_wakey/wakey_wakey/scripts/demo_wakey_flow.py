@@ -1,28 +1,34 @@
 #!/usr/bin/env python3
 
+import argparse
 import time
 
-import numpy as np
 import rclpy
 from rclpy.node import Node
 
-from sensor_msgs.msg import Image
 from std_msgs.msg import Bool, String
 
 
 class WakeyDemoDriver(Node):
-    IMAGE_TOPIC = '/oak/stereo/image_raw'
+    """
+    Drives the Wakey state-machine demo using the real detection node.
 
-    def __init__(self):
+    This node intentionally does not publish camera images. Start the OAK-D ROS
+    camera publisher separately, then run detection.py against that real image
+    topic.
+    """
+
+    def __init__(self, alarm_delay_sec):
         super().__init__('wakey_demo_driver')
 
         self.start_alarm_pub = self.create_publisher(Bool, '/wakey/start_alarm', 10)
-        self.image_pub = self.create_publisher(Image, self.IMAGE_TOPIC, 10)
 
         self.create_subscription(String, '/wakey/robot_state', self.on_state, 10)
 
         self.state = None
         self.started = False
+        self.done_logged = False
+        self.alarm_delay_sec = alarm_delay_sec
         self.start_time = time.time()
 
         self.timer = self.create_timer(0.1, self.tick)
@@ -32,65 +38,38 @@ class WakeyDemoDriver(Node):
             self.state = msg.data
             self.get_logger().info(f'FSM state = {self.state}')
 
-    def make_depth_image(self, direction=None):
-        width = 160
-        height = 120
-        depth_mm = np.full((height, width), 3000, dtype=np.uint16)
-
-        if direction is not None:
-            x_ranges = {
-                'left': (5, 55),
-                'center': (55, 105),
-                'right': (105, 155),
-            }
-            x0, x1 = x_ranges[direction]
-            depth_mm[25:95, x0:x1] = 650
-
-        msg = Image()
-        msg.header.stamp = self.get_clock().now().to_msg()
-        msg.height = height
-        msg.width = width
-        msg.encoding = '16UC1'
-        msg.is_bigendian = 0
-        msg.step = width * 2
-        msg.data = depth_mm.tobytes()
-        return msg
-
-    def demo_direction(self, elapsed):
-        if elapsed < 4.0:
-            return 'left'
-        if elapsed < 6.0:
-            return 'center'
-        return 'right'
-
     def tick(self):
         elapsed = time.time() - self.start_time
 
-        # First publish far depth frames while FSM is IDLE.
-        if elapsed < 2.0:
-            self.image_pub.publish(self.make_depth_image())
-            return
-
-        # Trigger alarm once.
-        if not self.started:
+        if not self.started and elapsed >= self.alarm_delay_sec:
             msg = Bool()
             msg.data = True
             self.start_alarm_pub.publish(msg)
             self.started = True
             self.get_logger().info('Published /wakey/start_alarm = True')
 
-        # Keep publishing a close depth blob so detection can report direction.
-        if elapsed < 8.0:
-            self.image_pub.publish(self.make_depth_image(self.demo_direction(elapsed)))
+        if self.state == 'DONE' and not self.done_logged:
+            self.done_logged = True
+            self.get_logger().info('Demo flow reached DONE.')
             return
 
-        self.get_logger().info('Demo driver done. Now use wakefulness touch sensors to enter GAME.')
-        self.timer.cancel()
+        if self.started and self.state == 'FLEEING':
+            self.get_logger().info('Detection triggered FLEEING. Catch/lift Pupper to enter GAME.')
+            self.timer.cancel()
 
 
 def main(args=None):
-    rclpy.init(args=args)
-    node = WakeyDemoDriver()
+    parser = argparse.ArgumentParser(description='Start Wakey flow while using real camera detection.')
+    parser.add_argument(
+        '--alarm-delay-sec',
+        type=float,
+        default=2.0,
+        help='Seconds to wait before publishing /wakey/start_alarm.',
+    )
+    parsed_args, ros_args = parser.parse_known_args(args)
+
+    rclpy.init(args=ros_args)
+    node = WakeyDemoDriver(parsed_args.alarm_delay_sec)
 
     try:
         rclpy.spin(node)

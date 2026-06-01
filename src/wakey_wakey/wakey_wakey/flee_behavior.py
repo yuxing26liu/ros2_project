@@ -11,6 +11,7 @@ class FleeBehavior(Node):
         # --- State tracking ---
         self.active = False
         self.escalation_level = 0
+        self.latest_user_direction = None
 
         # --- Wiggle state ---
         self.wiggle_timer = None
@@ -43,6 +44,8 @@ class FleeBehavior(Node):
         elif msg.data == 'FLEEING':
             self.cancel_wiggle_timer()  # stop wiggle if still running
             self.active = True
+            if self.latest_user_direction is not None:
+                self.select_flee_trajectory(self.latest_user_direction)
         else:
             # GAME, DONE, IDLE — stop everything
             self.active = False
@@ -56,6 +59,8 @@ class FleeBehavior(Node):
 
     def on_user_direction(self, msg: String):
         """React to user direction only while FLEEING."""
+        self.latest_user_direction = msg.data
+
         if not self.active:
             return
         self.select_flee_trajectory(msg.data)

@@ -29,7 +29,7 @@ class DetectionNode(Node):
         self.declare_parameter('image_topic', '/oak/stereo/image_raw')
         self.declare_parameter('detection_mode', 'auto')
         self.declare_parameter('difference_threshold', 35)
-        self.declare_parameter('min_area_fraction', 0.08)
+        self.declare_parameter('min_area_fraction', 0.02)
         self.declare_parameter('min_blob_pixels', 350)
         self.declare_parameter('background_alpha', 0.03)
         self.declare_parameter('publish_cooldown_sec', 1.0)
@@ -90,8 +90,7 @@ class DetectionNode(Node):
         if self.robot_state == 'IDLE':
             self.last_publish_time = 0.0
         elif self.robot_state == 'ALARMING':
-            self.publish_flee_trigger(True)
-            self.get_logger().info('Alarm started. Published flee trigger.')
+            self.get_logger().info('Alarm started. Waiting for user approach detection.')
 
     def on_image(self, msg: Image):
         self.last_image_time = self.get_clock().now().nanoseconds / 1e9
@@ -113,6 +112,7 @@ class DetectionNode(Node):
         elif image_kind == 'depth':
             detected, direction, foreground_info = self.detect_depth_approach(image)
         else:
+            image = self.preprocess_intensity(image)
             self.update_background(image)
 
             if self.background is None:
@@ -132,6 +132,7 @@ class DetectionNode(Node):
             return
 
         self.last_publish_time = now
+        self.publish_flee_trigger(True)
         self.publish_direction(direction)
 
         self.get_logger().info(
@@ -199,7 +200,7 @@ class DetectionNode(Node):
             image = image.reshape((msg.height, msg.step))[:, :row_width]
             image = image.reshape((msg.height, msg.width, 3))
 
-            if self.detection_mode in ('auto', 'color'):
+            if self.detection_mode == 'color':
                 if msg.encoding == 'rgb8':
                     image = image[:, :, ::-1]
                 return image, 'color'
@@ -212,7 +213,13 @@ class DetectionNode(Node):
         return None, None
 
     def should_use_color(self, image_kind):
-        return image_kind == 'color' and cv2 is not None
+        return image_kind == 'color' and self.detection_mode == 'color' and cv2 is not None
+
+    def preprocess_intensity(self, image):
+        if cv2 is None:
+            return image
+
+        return cv2.GaussianBlur(image.astype(np.uint8), (7, 7), 0).astype(np.float32)
 
     def update_background(self, image):
         if self.background is None or self.background.shape != image.shape:
@@ -227,7 +234,12 @@ class DetectionNode(Node):
 
     def detect_foreground(self, image):
         diff = np.abs(image - self.background)
-        mask = diff >= self.difference_threshold
+        mask = (diff >= self.difference_threshold).astype(np.uint8)
+
+        if cv2 is not None:
+            kernel = np.ones((5, 5), dtype=np.uint8)
+            mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
+            mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
 
         blob_pixels = int(mask.sum())
         area_fraction = blob_pixels / float(mask.size)
