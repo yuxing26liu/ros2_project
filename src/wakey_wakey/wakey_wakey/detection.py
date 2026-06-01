@@ -11,10 +11,13 @@ class DetectionNode(Node):
     """
     Detects user approach from a black-and-white DepthAI image stream.
 
-    The node learns a background while IDLE, freezes it when ALARMING starts,
-    then publishes a flee trigger and approach direction when enough of the
-    image changes.
+    The node learns a background while IDLE. When ALARMING starts, it
+    immediately tells the state machine to enter FLEEING. While FLEEING, it
+    publishes approach direction so flee_behavior can react to the user's
+    movement.
     """
+
+    DETECTION_STATES = {'ALARMING', 'FLEEING'}
 
     def __init__(self):
         super().__init__('detection_node')
@@ -56,6 +59,9 @@ class DetectionNode(Node):
 
         if self.robot_state == 'IDLE':
             self.last_publish_time = 0.0
+        elif self.robot_state == 'ALARMING':
+            self.publish_flee_trigger(True)
+            self.get_logger().info('Alarm started. Published flee trigger.')
 
     def on_image(self, msg: Image):
         image = self.image_msg_to_grayscale(msg)
@@ -65,7 +71,7 @@ class DetectionNode(Node):
 
         self.update_background(image)
 
-        if self.robot_state != 'ALARMING' or self.background is None:
+        if self.robot_state not in self.DETECTION_STATES or self.background is None:
             return
 
         detected, direction, area_fraction = self.detect_foreground(image)
@@ -79,7 +85,6 @@ class DetectionNode(Node):
 
         self.last_publish_time = now
         self.publish_direction(direction)
-        self.publish_flee_trigger(True)
 
         self.get_logger().info(
             f'User approach detected: direction={direction}, foreground={area_fraction:.2%}.'
