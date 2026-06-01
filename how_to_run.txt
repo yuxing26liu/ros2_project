@@ -1,0 +1,26 @@
+1. to start the camera: 
+ros2 launch depthai_ros_driver camera.launch.py camera_model:=OAK-D 
+or 
+ros2 launch depthai_ros_driver rgbd_pcl.launch.py 
+
+2.run detection: 
+ros2 run wakey_wakey detection --ros-args \
+  -p image_topic:=/oak/stereo/image_raw \
+  -p detection_mode:=auto \
+  -p approach_distance_m:=1.2
+
+3. Demo: 
+python3 src/wakey_wakey/wakey_wakey/scripts/demo_wakey_flow.py
+
+
+Expected flow:
+IDLE
+demo_wakey_flow publishes /wakey/start_alarm=True
+ALARMING
+detection waits for real camera evidence
+you approach camera
+detection publishes /wakey/flee_trigger=True and /wakey/user_direction
+FLEEING
+flee_behavior publishes /cmd_vel
+wakefulness detects pickup/catch
+GAME would normally start, but you are intentionally not running game
