@@ -1,0 +1,43 @@
+[10.547s] Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_music': PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_music/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/ubuntu/ros2_ws/build/mini_pupper_music/build
+[13.532s] running develop
+[16.257s] Removing /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages/mini-pupper-music.egg-link (link to .)
+[16.512s] Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_music' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_music/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/ubuntu/ros2_ws/build/mini_pupper_music/build
+[16.532s] Invoking command in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_music': PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_music/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/mini_pupper_music build --build-base /home/ubuntu/ros2_ws/build/mini_pupper_music/build install --record /home/ubuntu/ros2_ws/build/mini_pupper_music/install.log --single-version-externally-managed install_data --force
+[19.253s] running egg_info
+[19.257s] writing ../../../build/mini_pupper_music/mini_pupper_music.egg-info/PKG-INFO
+[19.261s] writing dependency_links to ../../../build/mini_pupper_music/mini_pupper_music.egg-info/dependency_links.txt
+[19.264s] writing entry points to ../../../build/mini_pupper_music/mini_pupper_music.egg-info/entry_points.txt
+[19.268s] writing requirements to ../../../build/mini_pupper_music/mini_pupper_music.egg-info/requires.txt
+[19.271s] writing top-level names to ../../../build/mini_pupper_music/mini_pupper_music.egg-info/top_level.txt
+[19.276s] reading manifest file '../../../build/mini_pupper_music/mini_pupper_music.egg-info/SOURCES.txt'
+[19.285s] writing manifest file '../../../build/mini_pupper_music/mini_pupper_music.egg-info/SOURCES.txt'
+[19.292s] running build
+[19.318s] running build_py
+[19.326s] creating /home/ubuntu/ros2_ws/build/mini_pupper_music/build
+[19.335s] creating /home/ubuntu/ros2_ws/build/mini_pupper_music/build/lib
+[19.337s] creating /home/ubuntu/ros2_ws/build/mini_pupper_music/build/lib/mini_pupper_music
+[19.339s] copying mini_pupper_music/__init__.py -> /home/ubuntu/ros2_ws/build/mini_pupper_music/build/lib/mini_pupper_music
+[19.343s] copying mini_pupper_music/music_player.py -> /home/ubuntu/ros2_ws/build/mini_pupper_music/build/lib/mini_pupper_music
+[19.346s] copying mini_pupper_music/music_server.py -> /home/ubuntu/ros2_ws/build/mini_pupper_music/build/lib/mini_pupper_music
+[19.349s] running install
+[19.352s] running install_lib
+[19.355s] creating /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages/mini_pupper_music
+[19.358s] copying /home/ubuntu/ros2_ws/build/mini_pupper_music/build/lib/mini_pupper_music/__init__.py -> /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages/mini_pupper_music
+[19.361s] copying /home/ubuntu/ros2_ws/build/mini_pupper_music/build/lib/mini_pupper_music/music_player.py -> /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages/mini_pupper_music
+[19.364s] copying /home/ubuntu/ros2_ws/build/mini_pupper_music/build/lib/mini_pupper_music/music_server.py -> /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages/mini_pupper_music
+[19.368s] byte-compiling /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages/mini_pupper_music/__init__.py to __init__.cpython-310.pyc
+[19.370s] byte-compiling /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages/mini_pupper_music/music_player.py to music_player.cpython-310.pyc
+[19.373s] byte-compiling /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages/mini_pupper_music/music_server.py to music_server.cpython-310.pyc
+[19.375s] running install_data
+[19.376s] copying resource/mini_pupper_music -> /home/ubuntu/ros2_ws/install/mini_pupper_music/share/ament_index/resource_index/packages
+[19.377s] copying package.xml -> /home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music
+[19.378s] copying resource/mini_pupper_music -> /home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/resource
+[19.379s] copying resource/robot1.wav -> /home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/resource
+[19.506s] copying resource/robot1.mp3 -> /home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/resource
+[19.526s] copying launch/music.launch.py -> /home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music
+[19.530s] running install_egg_info
+[19.543s] Copying ../../../build/mini_pupper_music/mini_pupper_music.egg-info to /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages/mini_pupper_music-1.0.0-py3.10.egg-info
+[19.563s] running install_scripts
+[19.843s] Installing service script to /home/ubuntu/ros2_ws/install/mini_pupper_music/lib/mini_pupper_music
+[19.848s] writing list of installed files to '/home/ubuntu/ros2_ws/build/mini_pupper_music/install.log'
+[21.594s] Invoked command in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_music' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_music/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/mini_pupper_music build --build-base /home/ubuntu/ros2_ws/build/mini_pupper_music/build install --record /home/ubuntu/ros2_ws/build/mini_pupper_music/install.log --single-version-externally-managed install_data --force

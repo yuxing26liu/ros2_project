@@ -1,0 +1,5 @@
+[console_scripts]
+client = lab2task4.client_go_pupper:main
+salsa = lab2task4.sample_controller:main
+service = lab2task4.service_go_pupper:main
+

@@ -1,0 +1,79 @@
+[0.682s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'lab2task5']
+[0.683s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['lab2task5'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb957da80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb971bfd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb971bfd0>>)
+[1.842s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.844s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5'
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.940s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['ignore', 'ignore_ament_install']
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ignore'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ignore_ament_install'
+[1.943s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['colcon_pkg']
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'colcon_pkg'
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['colcon_meta']
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'colcon_meta'
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['ros']
+[1.944s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ros'
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['cmake', 'python']
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'cmake'
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'python'
+[1.945s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['python_setup_py']
+[1.946s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'python_setup_py'
+[1.946s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.948s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.948s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.949s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.949s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.949s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.950s] WARNING:colcon.colcon_core.package_selection:ignoring unknown package 'lab2task5' in --packages-select
+[2.055s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.055s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.073s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 18 installed packages in /home/ubuntu/ros2_ws/install
+[2.076s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/ubuntu/ros2_ws/src/lab2task4/lab2task4/install
+[2.087s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 275 installed packages in /opt/ros/humble
+[2.094s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.288s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.292s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.293s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.294s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.294s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.294s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.329s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.331s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.331s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.398s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.413s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.414s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/local_setup.ps1'
+[2.419s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/_local_setup_util_ps1.py'
+[2.425s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/setup.ps1'
+[2.440s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/local_setup.sh'
+[2.444s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/_local_setup_util_sh.py'
+[2.447s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/setup.sh'
+[2.459s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/local_setup.bash'
+[2.461s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/setup.bash'
+[2.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/local_setup.zsh'
+[2.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5/install/setup.zsh'

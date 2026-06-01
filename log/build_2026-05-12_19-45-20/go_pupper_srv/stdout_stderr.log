@@ -1,0 +1,44 @@
+running egg_info
+creating ../../build/go_pupper_srv/go_pupper_srv.egg-info
+writing ../../build/go_pupper_srv/go_pupper_srv.egg-info/PKG-INFO
+writing dependency_links to ../../build/go_pupper_srv/go_pupper_srv.egg-info/dependency_links.txt
+writing entry points to ../../build/go_pupper_srv/go_pupper_srv.egg-info/entry_points.txt
+writing requirements to ../../build/go_pupper_srv/go_pupper_srv.egg-info/requires.txt
+writing top-level names to ../../build/go_pupper_srv/go_pupper_srv.egg-info/top_level.txt
+writing manifest file '../../build/go_pupper_srv/go_pupper_srv.egg-info/SOURCES.txt'
+reading manifest file '../../build/go_pupper_srv/go_pupper_srv.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/go_pupper_srv/go_pupper_srv.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros2_ws/build/go_pupper_srv/build
+creating /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib
+creating /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+copying go_pupper_srv/__init__.py -> /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+copying go_pupper_srv/sample_controller.py -> /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+copying go_pupper_srv/client_go_pupper.py -> /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+copying go_pupper_srv/service_go_pupper.py -> /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+running install
+running install_lib
+creating /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+copying /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv/__init__.py -> /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+copying /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv/sample_controller.py -> /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+copying /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv/client_go_pupper.py -> /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+copying /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv/service_go_pupper.py -> /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+byte-compiling /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv/sample_controller.py to sample_controller.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv/client_go_pupper.py to client_go_pupper.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv/service_go_pupper.py to service_go_pupper.cpython-310.pyc
+running install_data
+creating /home/ubuntu/ros2_ws/install/go_pupper_srv/share/ament_index
+creating /home/ubuntu/ros2_ws/install/go_pupper_srv/share/ament_index/resource_index
+creating /home/ubuntu/ros2_ws/install/go_pupper_srv/share/ament_index/resource_index/packages
+copying resource/go_pupper_srv -> /home/ubuntu/ros2_ws/install/go_pupper_srv/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros2_ws/install/go_pupper_srv/share/go_pupper_srv
+running install_egg_info
+Copying ../../build/go_pupper_srv/go_pupper_srv.egg-info to /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv-0.0.0-py3.10.egg-info
+running install_scripts
+Installing client script to /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/go_pupper_srv
+Installing salsa script to /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/go_pupper_srv
+Installing service script to /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/go_pupper_srv
+writing list of installed files to '/home/ubuntu/ros2_ws/build/go_pupper_srv/install.log'

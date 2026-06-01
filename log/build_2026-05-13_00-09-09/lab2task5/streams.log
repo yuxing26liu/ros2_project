@@ -1,0 +1,41 @@
+[5.070s] Invoking command in '/home/ubuntu/ros2_ws/src/lab2task5': PYTHONPATH=/home/ubuntu/ros2_ws/build/lab2task5/prefix_override:/home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab2task5 build --build-base /home/ubuntu/ros2_ws/build/lab2task5/build install --record /home/ubuntu/ros2_ws/build/lab2task5/install.log --single-version-externally-managed install_data
+[6.678s] running egg_info
+[6.680s] creating ../../build/lab2task5/lab2task5.egg-info
+[6.681s] writing ../../build/lab2task5/lab2task5.egg-info/PKG-INFO
+[6.682s] writing dependency_links to ../../build/lab2task5/lab2task5.egg-info/dependency_links.txt
+[6.683s] writing entry points to ../../build/lab2task5/lab2task5.egg-info/entry_points.txt
+[6.684s] writing requirements to ../../build/lab2task5/lab2task5.egg-info/requires.txt
+[6.685s] writing top-level names to ../../build/lab2task5/lab2task5.egg-info/top_level.txt
+[6.685s] writing manifest file '../../build/lab2task5/lab2task5.egg-info/SOURCES.txt'
+[6.695s] reading manifest file '../../build/lab2task5/lab2task5.egg-info/SOURCES.txt'
+[6.696s] adding license file 'LICENSE'
+[6.698s] writing manifest file '../../build/lab2task5/lab2task5.egg-info/SOURCES.txt'
+[6.699s] running build
+[6.699s] running build_py
+[6.700s] creating /home/ubuntu/ros2_ws/build/lab2task5/build
+[6.701s] creating /home/ubuntu/ros2_ws/build/lab2task5/build/lib
+[6.702s] creating /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5
+[6.702s] copying lab2task5/__init__.py -> /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5
+[6.703s] copying lab2task5/sample_controller.py -> /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5
+[6.709s] copying lab2task5/pupper_display_test.py -> /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5
+[6.710s] copying lab2task5/client_go_pupper.py -> /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5
+[6.711s] copying lab2task5/service_go_pupper.py -> /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5
+[6.713s] running install
+[6.714s] running install_lib
+[6.718s] creating /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5
+[6.719s] copying /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5/__init__.py -> /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5
+[6.719s] copying /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5/sample_controller.py -> /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5
+[6.720s] copying /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5/pupper_display_test.py -> /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5
+[6.721s] copying /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5/client_go_pupper.py -> /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5
+[6.722s] copying /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5/service_go_pupper.py -> /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5
+[6.725s] byte-compiling /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5/__init__.py to __init__.cpython-310.pyc
+[6.727s] byte-compiling /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5/sample_controller.py to sample_controller.cpython-310.pyc
+[6.730s] byte-compiling /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5/pupper_display_test.py to pupper_display_test.cpython-310.pyc
+[6.732s] byte-compiling /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5/client_go_pupper.py to client_go_pupper.cpython-310.pyc
+[6.736s] byte-compiling /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5/service_go_pupper.py to service_go_pupper.cpython-310.pyc
+[6.739s] running install_data
+[6.742s] creating /home/ubuntu/ros2_ws/install/lab2task5/share/ament_index
+[6.744s] creating /home/ubuntu/ros2_ws/install/lab2task5/share/ament_index/resource_index
+[6.745s] creating /home/ubuntu/ros2_ws/install/lab2task5/share/ament_index/resource_index/packages
+[6.747s] error: can't copy 'resource/lab2task5': doesn't exist or not a regular file
+[6.845s] Invoked command in '/home/ubuntu/ros2_ws/src/lab2task5' returned '1': PYTHONPATH=/home/ubuntu/ros2_ws/build/lab2task5/prefix_override:/home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab2task5 build --build-base /home/ubuntu/ros2_ws/build/lab2task5/build install --record /home/ubuntu/ros2_ws/build/lab2task5/install.log --single-version-externally-managed install_data

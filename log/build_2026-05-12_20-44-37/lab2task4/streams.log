@@ -1,0 +1,21 @@
+[4.652s] Invoking command in '/home/ubuntu/ros2_ws/src/lab2task4': PYTHONPATH=/home/ubuntu/ros2_ws/build/lab2task4/prefix_override:/home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab2task4 build --build-base /home/ubuntu/ros2_ws/build/lab2task4/build install --record /home/ubuntu/ros2_ws/build/lab2task4/install.log --single-version-externally-managed install_data
+[6.232s] running egg_info
+[6.235s] writing ../../build/lab2task4/lab2task4.egg-info/PKG-INFO
+[6.236s] writing dependency_links to ../../build/lab2task4/lab2task4.egg-info/dependency_links.txt
+[6.237s] writing entry points to ../../build/lab2task4/lab2task4.egg-info/entry_points.txt
+[6.237s] writing requirements to ../../build/lab2task4/lab2task4.egg-info/requires.txt
+[6.238s] writing top-level names to ../../build/lab2task4/lab2task4.egg-info/top_level.txt
+[6.248s] reading manifest file '../../build/lab2task4/lab2task4.egg-info/SOURCES.txt'
+[6.250s] adding license file 'LICENSE'
+[6.253s] writing manifest file '../../build/lab2task4/lab2task4.egg-info/SOURCES.txt'
+[6.254s] running build
+[6.255s] running build_py
+[6.255s] copying lab2task4/client_go_pupper.py -> /home/ubuntu/ros2_ws/build/lab2task4/build/lib/lab2task4
+[6.257s] running install
+[6.258s] running install_lib
+[6.263s] copying /home/ubuntu/ros2_ws/build/lab2task4/build/lib/lab2task4/client_go_pupper.py -> /home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages/lab2task4
+[6.267s] byte-compiling /home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages/lab2task4/client_go_pupper.py to client_go_pupper.cpython-310.pyc
+[6.269s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (client_go_pupper.py, line 47)
+[6.271s] running install_data
+[6.274s] error: can't copy 'resource/lab2task4': doesn't exist or not a regular file
+[6.389s] Invoked command in '/home/ubuntu/ros2_ws/src/lab2task4' returned '1': PYTHONPATH=/home/ubuntu/ros2_ws/build/lab2task4/prefix_override:/home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab2task4 build --build-base /home/ubuntu/ros2_ws/build/lab2task4/build install --record /home/ubuntu/ros2_ws/build/lab2task4/install.log --single-version-externally-managed install_data

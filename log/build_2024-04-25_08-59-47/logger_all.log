@@ -1,0 +1,1197 @@
+[0.808s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--executor', 'sequential', '--symlink-install']
+[0.808s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='sequential', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff90af44c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff90cfd2a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff90cfd2a0>>)
+[1.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.871s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.871s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.871s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.871s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.871s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.871s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ros2_ws'
+[1.872s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.872s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.872s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extensions ['ignore', 'ignore_ament_install']
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extension 'ignore'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extension 'ignore_ament_install'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extensions ['colcon_pkg']
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extension 'colcon_pkg'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extensions ['colcon_meta']
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extension 'colcon_meta'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extensions ['ros']
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extension 'ros'
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extensions ['cmake', 'python']
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extension 'cmake'
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extension 'python'
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extensions ['python_setup_py']
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ) by extension 'python_setup_py'
+[1.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extensions ['ignore', 'ignore_ament_install']
+[1.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extension 'ignore'
+[1.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extension 'ignore_ament_install'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extensions ['colcon_pkg']
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extension 'colcon_pkg'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extensions ['colcon_meta']
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extension 'colcon_meta'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extensions ['ros']
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extension 'ros'
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extensions ['cmake', 'python']
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extension 'cmake'
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extension 'python'
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extensions ['python_setup_py']
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ) by extension 'python_setup_py'
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ) by extensions ['ignore', 'ignore_ament_install']
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ) by extension 'ignore'
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ) by extension 'ignore_ament_install'
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ) by extensions ['colcon_pkg']
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ) by extension 'colcon_pkg'
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ) by extensions ['colcon_meta']
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ) by extension 'colcon_meta'
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ) by extensions ['ros']
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ) by extension 'ros'
+[1.973s] DEBUG:colcon.colcon_core.package_identification:Package 'src/champ/champ/champ' with type 'ros.ament_cmake' and name 'champ'
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_base) by extensions ['ignore', 'ignore_ament_install']
+[1.974s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_base) by extension 'ignore'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_base) by extension 'ignore_ament_install'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_base) by extensions ['colcon_pkg']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_base) by extension 'colcon_pkg'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_base) by extensions ['colcon_meta']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_base) by extension 'colcon_meta'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_base) by extensions ['ros']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_base) by extension 'ros'
+[1.981s] DEBUG:colcon.colcon_core.package_identification:Package 'src/champ/champ/champ_base' with type 'ros.ament_cmake' and name 'champ_base'
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_bringup) by extension 'ignore'
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_bringup) by extension 'ignore_ament_install'
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_bringup) by extensions ['colcon_pkg']
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_bringup) by extension 'colcon_pkg'
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_bringup) by extensions ['colcon_meta']
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_bringup) by extension 'colcon_meta'
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_bringup) by extensions ['ros']
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_bringup) by extension 'ros'
+[1.986s] DEBUG:colcon.colcon_core.package_identification:Package 'src/champ/champ/champ_bringup' with type 'ros.ament_cmake' and name 'champ_bringup'
+[1.986s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_config) by extensions ['ignore', 'ignore_ament_install']
+[1.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_config) by extension 'ignore'
+[1.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_config) by extension 'ignore_ament_install'
+[1.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_config) by extensions ['colcon_pkg']
+[1.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_config) by extension 'colcon_pkg'
+[1.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_config) by extensions ['colcon_meta']
+[1.987s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_config) by extension 'colcon_meta'
+[1.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_config) by extensions ['ros']
+[1.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_config) by extension 'ros'
+[1.990s] DEBUG:colcon.colcon_core.package_identification:Package 'src/champ/champ/champ_config' with type 'ros.ament_cmake' and name 'champ_config'
+[1.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_description) by extensions ['ignore', 'ignore_ament_install']
+[1.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_description) by extension 'ignore'
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_description) by extension 'ignore_ament_install'
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_description) by extensions ['colcon_pkg']
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_description) by extension 'colcon_pkg'
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_description) by extensions ['colcon_meta']
+[1.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_description) by extension 'colcon_meta'
+[1.992s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_description) by extensions ['ros']
+[1.992s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_description) by extension 'ros'
+[1.994s] DEBUG:colcon.colcon_core.package_identification:Package 'src/champ/champ/champ_description' with type 'ros.ament_cmake' and name 'champ_description'
+[1.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[1.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) by extension 'ignore'
+[1.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) by extension 'ignore_ament_install'
+[1.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) by extensions ['colcon_pkg']
+[1.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) by extension 'colcon_pkg'
+[1.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) by extensions ['colcon_meta']
+[1.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) by extension 'colcon_meta'
+[1.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) by extensions ['ros']
+[1.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) by extension 'ros'
+[1.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_gazebo) ignored
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_msgs) by extension 'ignore'
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_msgs) by extension 'ignore_ament_install'
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_msgs) by extensions ['colcon_pkg']
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_msgs) by extension 'colcon_pkg'
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_msgs) by extensions ['colcon_meta']
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_msgs) by extension 'colcon_meta'
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_msgs) by extensions ['ros']
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_msgs) by extension 'ros'
+[2.001s] DEBUG:colcon.colcon_core.package_identification:Package 'src/champ/champ/champ_msgs' with type 'ros.ament_cmake' and name 'champ_msgs'
+[2.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) by extensions ['ignore', 'ignore_ament_install']
+[2.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) by extension 'ignore'
+[2.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) by extension 'ignore_ament_install'
+[2.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) by extensions ['colcon_pkg']
+[2.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) by extension 'colcon_pkg'
+[2.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) by extensions ['colcon_meta']
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) by extension 'colcon_meta'
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) by extensions ['ros']
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) by extension 'ros'
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/champ_navigation) ignored
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extensions ['ignore', 'ignore_ament_install']
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extension 'ignore'
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extension 'ignore_ament_install'
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extensions ['colcon_pkg']
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extension 'colcon_pkg'
+[2.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extensions ['colcon_meta']
+[2.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extension 'colcon_meta'
+[2.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extensions ['ros']
+[2.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extension 'ros'
+[2.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extensions ['cmake', 'python']
+[2.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extension 'cmake'
+[2.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extension 'python'
+[2.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extensions ['python_setup_py']
+[2.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs) by extension 'python_setup_py'
+[2.007s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extensions ['ignore', 'ignore_ament_install']
+[2.007s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extension 'ignore'
+[2.007s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extension 'ignore_ament_install'
+[2.007s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extensions ['colcon_pkg']
+[2.007s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extension 'colcon_pkg'
+[2.008s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extensions ['colcon_meta']
+[2.008s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extension 'colcon_meta'
+[2.008s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extensions ['ros']
+[2.008s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extension 'ros'
+[2.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extensions ['cmake', 'python']
+[2.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extension 'cmake'
+[2.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extension 'python'
+[2.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extensions ['python_setup_py']
+[2.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ/docs/images) by extension 'python_setup_py'
+[2.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ_teleop) by extensions ['ignore', 'ignore_ament_install']
+[2.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ_teleop) by extension 'ignore'
+[2.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ_teleop) by extension 'ignore_ament_install'
+[2.011s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ_teleop) by extensions ['colcon_pkg']
+[2.011s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ_teleop) by extension 'colcon_pkg'
+[2.011s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ_teleop) by extensions ['colcon_meta']
+[2.011s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ_teleop) by extension 'colcon_meta'
+[2.011s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ_teleop) by extensions ['ros']
+[2.011s] Level 1:colcon.colcon_core.package_identification:_identify(src/champ/champ_teleop) by extension 'ros'
+[2.014s] DEBUG:colcon.colcon_core.package_identification:Package 'src/champ/champ_teleop' with type 'ros.ament_cmake' and name 'champ_teleop'
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_stl_ros) by extensions ['ignore', 'ignore_ament_install']
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_stl_ros) by extension 'ignore'
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_stl_ros) by extension 'ignore_ament_install'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_stl_ros) by extensions ['colcon_pkg']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_stl_ros) by extension 'colcon_pkg'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_stl_ros) by extensions ['colcon_meta']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_stl_ros) by extension 'colcon_meta'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_stl_ros) by extensions ['ros']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_stl_ros) by extension 'ros'
+[2.019s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ldlidar_stl_ros' with type 'ros.ament_cmake' and name 'ldlidar_stl_ros2'
+[2.019s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extensions ['ignore', 'ignore_ament_install']
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extension 'ignore'
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extension 'ignore_ament_install'
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extensions ['colcon_pkg']
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extension 'colcon_pkg'
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extensions ['colcon_meta']
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extension 'colcon_meta'
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extensions ['ros']
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extension 'ros'
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extensions ['cmake', 'python']
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extension 'cmake'
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extension 'python'
+[2.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extensions ['python_setup_py']
+[2.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros) by extension 'python_setup_py'
+[2.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_2_description) by extensions ['ignore', 'ignore_ament_install']
+[2.023s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_2_description) by extension 'ignore'
+[2.023s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_2_description) by extension 'ignore_ament_install'
+[2.023s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_2_description) by extensions ['colcon_pkg']
+[2.023s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_2_description) by extension 'colcon_pkg'
+[2.023s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_2_description) by extensions ['colcon_meta']
+[2.023s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_2_description) by extension 'colcon_meta'
+[2.024s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_2_description) by extensions ['ros']
+[2.024s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_2_description) by extension 'ros'
+[2.026s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mini_pupper_ros/mini_pupper_2_description' with type 'ros.ament_cmake' and name 'mini_pupper_2_description'
+[2.026s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_bringup) by extensions ['ignore', 'ignore_ament_install']
+[2.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_bringup) by extension 'ignore'
+[2.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_bringup) by extension 'ignore_ament_install'
+[2.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_bringup) by extensions ['colcon_pkg']
+[2.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_bringup) by extension 'colcon_pkg'
+[2.028s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_bringup) by extensions ['colcon_meta']
+[2.028s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_bringup) by extension 'colcon_meta'
+[2.028s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_bringup) by extensions ['ros']
+[2.028s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_bringup) by extension 'ros'
+[2.030s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mini_pupper_ros/mini_pupper_bringup' with type 'ros.ament_cmake' and name 'mini_pupper_bringup'
+[2.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_dance) by extensions ['ignore', 'ignore_ament_install']
+[2.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_dance) by extension 'ignore'
+[2.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_dance) by extension 'ignore_ament_install'
+[2.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_dance) by extensions ['colcon_pkg']
+[2.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_dance) by extension 'colcon_pkg'
+[2.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_dance) by extensions ['colcon_meta']
+[2.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_dance) by extension 'colcon_meta'
+[2.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_dance) by extensions ['ros']
+[2.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_dance) by extension 'ros'
+[2.034s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mini_pupper_ros/mini_pupper_dance' with type 'ros.ament_python' and name 'mini_pupper_dance'
+[2.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_description) by extensions ['ignore', 'ignore_ament_install']
+[2.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_description) by extension 'ignore'
+[2.035s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_description) by extension 'ignore_ament_install'
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_description) by extensions ['colcon_pkg']
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_description) by extension 'colcon_pkg'
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_description) by extensions ['colcon_meta']
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_description) by extension 'colcon_meta'
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_description) by extensions ['ros']
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_description) by extension 'ros'
+[2.038s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mini_pupper_ros/mini_pupper_description' with type 'ros.ament_cmake' and name 'mini_pupper_description'
+[2.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_driver) by extensions ['ignore', 'ignore_ament_install']
+[2.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_driver) by extension 'ignore'
+[2.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_driver) by extension 'ignore_ament_install'
+[2.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_driver) by extensions ['colcon_pkg']
+[2.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_driver) by extension 'colcon_pkg'
+[2.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_driver) by extensions ['colcon_meta']
+[2.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_driver) by extension 'colcon_meta'
+[2.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_driver) by extensions ['ros']
+[2.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_driver) by extension 'ros'
+[2.044s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mini_pupper_ros/mini_pupper_driver' with type 'ros.ament_python' and name 'mini_pupper_driver'
+[2.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[2.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) by extension 'ignore'
+[2.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) by extension 'ignore_ament_install'
+[2.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) by extensions ['colcon_pkg']
+[2.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) by extension 'colcon_pkg'
+[2.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) by extensions ['colcon_meta']
+[2.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) by extension 'colcon_meta'
+[2.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) by extensions ['ros']
+[2.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) by extension 'ros'
+[2.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_gazebo) ignored
+[2.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[2.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_interfaces) by extension 'ignore'
+[2.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_interfaces) by extension 'ignore_ament_install'
+[2.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_interfaces) by extensions ['colcon_pkg']
+[2.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_interfaces) by extension 'colcon_pkg'
+[2.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_interfaces) by extensions ['colcon_meta']
+[2.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_interfaces) by extension 'colcon_meta'
+[2.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_interfaces) by extensions ['ros']
+[2.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_interfaces) by extension 'ros'
+[2.050s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mini_pupper_ros/mini_pupper_interfaces' with type 'ros.ament_cmake' and name 'mini_pupper_interfaces'
+[2.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_music) by extensions ['ignore', 'ignore_ament_install']
+[2.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_music) by extension 'ignore'
+[2.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_music) by extension 'ignore_ament_install'
+[2.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_music) by extensions ['colcon_pkg']
+[2.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_music) by extension 'colcon_pkg'
+[2.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_music) by extensions ['colcon_meta']
+[2.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_music) by extension 'colcon_meta'
+[2.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_music) by extensions ['ros']
+[2.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_music) by extension 'ros'
+[2.054s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mini_pupper_ros/mini_pupper_music' with type 'ros.ament_python' and name 'mini_pupper_music'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) by extensions ['ignore', 'ignore_ament_install']
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) by extension 'ignore'
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) by extension 'ignore_ament_install'
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) by extensions ['colcon_pkg']
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) by extension 'colcon_pkg'
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) by extensions ['colcon_meta']
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) by extension 'colcon_meta'
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) by extensions ['ros']
+[2.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) by extension 'ros'
+[2.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/mini_pupper_ros/mini_pupper_navigation) ignored
+[2.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.204s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 275 installed packages in /opt/ros/humble
+[2.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.379s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_args' from command line to 'None'
+[2.379s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_target' from command line to 'None'
+[2.380s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.380s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_clean_cache' from command line to 'False'
+[2.380s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_clean_first' from command line to 'False'
+[2.380s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_force_configure' from command line to 'False'
+[2.380s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'ament_cmake_args' from command line to 'None'
+[2.380s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'catkin_cmake_args' from command line to 'None'
+[2.380s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.380s] DEBUG:colcon.colcon_core.verb:Building package 'champ' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/champ', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/champ', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/champ/champ/champ', 'symlink_install': True, 'test_result_base': None}
+[2.382s] Level 5:colcon.colcon_core.verb:set package 'champ_config' build argument 'cmake_args' from command line to 'None'
+[2.382s] Level 5:colcon.colcon_core.verb:set package 'champ_config' build argument 'cmake_target' from command line to 'None'
+[2.382s] Level 5:colcon.colcon_core.verb:set package 'champ_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.382s] Level 5:colcon.colcon_core.verb:set package 'champ_config' build argument 'cmake_clean_cache' from command line to 'False'
+[2.382s] Level 5:colcon.colcon_core.verb:set package 'champ_config' build argument 'cmake_clean_first' from command line to 'False'
+[2.382s] Level 5:colcon.colcon_core.verb:set package 'champ_config' build argument 'cmake_force_configure' from command line to 'False'
+[2.382s] Level 5:colcon.colcon_core.verb:set package 'champ_config' build argument 'ament_cmake_args' from command line to 'None'
+[2.383s] Level 5:colcon.colcon_core.verb:set package 'champ_config' build argument 'catkin_cmake_args' from command line to 'None'
+[2.383s] Level 5:colcon.colcon_core.verb:set package 'champ_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.383s] DEBUG:colcon.colcon_core.verb:Building package 'champ_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/champ_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/champ_config', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/champ/champ/champ_config', 'symlink_install': True, 'test_result_base': None}
+[2.384s] Level 5:colcon.colcon_core.verb:set package 'champ_description' build argument 'cmake_args' from command line to 'None'
+[2.384s] Level 5:colcon.colcon_core.verb:set package 'champ_description' build argument 'cmake_target' from command line to 'None'
+[2.384s] Level 5:colcon.colcon_core.verb:set package 'champ_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.384s] Level 5:colcon.colcon_core.verb:set package 'champ_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.385s] Level 5:colcon.colcon_core.verb:set package 'champ_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.385s] Level 5:colcon.colcon_core.verb:set package 'champ_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.385s] Level 5:colcon.colcon_core.verb:set package 'champ_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.385s] Level 5:colcon.colcon_core.verb:set package 'champ_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.385s] Level 5:colcon.colcon_core.verb:set package 'champ_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.385s] DEBUG:colcon.colcon_core.verb:Building package 'champ_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/champ_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/champ_description', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/champ/champ/champ_description', 'symlink_install': True, 'test_result_base': None}
+[2.386s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_args' from command line to 'None'
+[2.387s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_target' from command line to 'None'
+[2.387s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.387s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.387s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.387s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.387s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.387s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.387s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.387s] DEBUG:colcon.colcon_core.verb:Building package 'champ_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/champ_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/champ_msgs', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/champ/champ/champ_msgs', 'symlink_install': True, 'test_result_base': None}
+[2.389s] Level 5:colcon.colcon_core.verb:set package 'champ_teleop' build argument 'cmake_args' from command line to 'None'
+[2.389s] Level 5:colcon.colcon_core.verb:set package 'champ_teleop' build argument 'cmake_target' from command line to 'None'
+[2.389s] Level 5:colcon.colcon_core.verb:set package 'champ_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.389s] Level 5:colcon.colcon_core.verb:set package 'champ_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[2.389s] Level 5:colcon.colcon_core.verb:set package 'champ_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[2.389s] Level 5:colcon.colcon_core.verb:set package 'champ_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[2.389s] Level 5:colcon.colcon_core.verb:set package 'champ_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[2.390s] Level 5:colcon.colcon_core.verb:set package 'champ_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[2.390s] Level 5:colcon.colcon_core.verb:set package 'champ_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.390s] DEBUG:colcon.colcon_core.verb:Building package 'champ_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/champ_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/champ_teleop', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/champ/champ_teleop', 'symlink_install': True, 'test_result_base': None}
+[2.391s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_stl_ros2' build argument 'cmake_args' from command line to 'None'
+[2.391s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_stl_ros2' build argument 'cmake_target' from command line to 'None'
+[2.391s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_stl_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.392s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_stl_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.392s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_stl_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[2.392s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_stl_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[2.392s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_stl_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[2.392s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_stl_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.392s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_stl_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.392s] DEBUG:colcon.colcon_core.verb:Building package 'ldlidar_stl_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/ldlidar_stl_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/ldlidar_stl_ros', 'symlink_install': True, 'test_result_base': None}
+[2.393s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_2_description' build argument 'cmake_args' from command line to 'None'
+[2.394s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_2_description' build argument 'cmake_target' from command line to 'None'
+[2.394s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.394s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.394s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_2_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.394s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_2_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.394s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_2_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.394s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.394s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.394s] DEBUG:colcon.colcon_core.verb:Building package 'mini_pupper_2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/mini_pupper_2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/mini_pupper_2_description', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_2_description', 'symlink_install': True, 'test_result_base': None}
+[2.396s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_description' build argument 'cmake_args' from command line to 'None'
+[2.396s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_description' build argument 'cmake_target' from command line to 'None'
+[2.396s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.396s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.396s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.396s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.396s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.397s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.397s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.397s] DEBUG:colcon.colcon_core.verb:Building package 'mini_pupper_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/mini_pupper_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/mini_pupper_description', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_description', 'symlink_install': True, 'test_result_base': None}
+[2.398s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_driver' build argument 'cmake_args' from command line to 'None'
+[2.398s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_driver' build argument 'cmake_target' from command line to 'None'
+[2.398s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.398s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[2.399s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_driver' build argument 'cmake_clean_first' from command line to 'False'
+[2.399s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_driver' build argument 'cmake_force_configure' from command line to 'False'
+[2.399s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_driver' build argument 'ament_cmake_args' from command line to 'None'
+[2.399s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[2.399s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.399s] DEBUG:colcon.colcon_core.verb:Building package 'mini_pupper_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/mini_pupper_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/mini_pupper_driver', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_driver', 'symlink_install': True, 'test_result_base': None}
+[2.400s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_interfaces' build argument 'cmake_args' from command line to 'None'
+[2.401s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_interfaces' build argument 'cmake_target' from command line to 'None'
+[2.401s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.401s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[2.401s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[2.401s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[2.401s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[2.401s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[2.401s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.401s] DEBUG:colcon.colcon_core.verb:Building package 'mini_pupper_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/mini_pupper_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_interfaces', 'symlink_install': True, 'test_result_base': None}
+[2.403s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_music' build argument 'cmake_args' from command line to 'None'
+[2.403s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_music' build argument 'cmake_target' from command line to 'None'
+[2.403s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_music' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.403s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_music' build argument 'cmake_clean_cache' from command line to 'False'
+[2.403s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_music' build argument 'cmake_clean_first' from command line to 'False'
+[2.403s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_music' build argument 'cmake_force_configure' from command line to 'False'
+[2.403s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_music' build argument 'ament_cmake_args' from command line to 'None'
+[2.403s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_music' build argument 'catkin_cmake_args' from command line to 'None'
+[2.404s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_music' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.404s] DEBUG:colcon.colcon_core.verb:Building package 'mini_pupper_music' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/mini_pupper_music', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/mini_pupper_music', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_music', 'symlink_install': True, 'test_result_base': None}
+[2.405s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_args' from command line to 'None'
+[2.405s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_target' from command line to 'None'
+[2.405s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.405s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_clean_cache' from command line to 'False'
+[2.405s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_clean_first' from command line to 'False'
+[2.406s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_force_configure' from command line to 'False'
+[2.406s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'ament_cmake_args' from command line to 'None'
+[2.406s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'catkin_cmake_args' from command line to 'None'
+[2.406s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.406s] DEBUG:colcon.colcon_core.verb:Building package 'champ_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/champ_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/champ_base', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/champ/champ/champ_base', 'symlink_install': True, 'test_result_base': None}
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_dance' build argument 'cmake_args' from command line to 'None'
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_dance' build argument 'cmake_target' from command line to 'None'
+[2.408s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_dance' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.408s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_dance' build argument 'cmake_clean_cache' from command line to 'False'
+[2.408s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_dance' build argument 'cmake_clean_first' from command line to 'False'
+[2.408s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_dance' build argument 'cmake_force_configure' from command line to 'False'
+[2.408s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_dance' build argument 'ament_cmake_args' from command line to 'None'
+[2.408s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_dance' build argument 'catkin_cmake_args' from command line to 'None'
+[2.408s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_dance' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.408s] DEBUG:colcon.colcon_core.verb:Building package 'mini_pupper_dance' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/mini_pupper_dance', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/mini_pupper_dance', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_dance', 'symlink_install': True, 'test_result_base': None}
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'champ_bringup' build argument 'cmake_args' from command line to 'None'
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'champ_bringup' build argument 'cmake_target' from command line to 'None'
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'champ_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'champ_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'champ_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'champ_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'champ_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'champ_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'champ_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.411s] DEBUG:colcon.colcon_core.verb:Building package 'champ_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/champ_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/champ_bringup', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/champ/champ/champ_bringup', 'symlink_install': True, 'test_result_base': None}
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_bringup' build argument 'cmake_args' from command line to 'None'
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_bringup' build argument 'cmake_target' from command line to 'None'
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[2.413s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[2.413s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[2.413s] Level 5:colcon.colcon_core.verb:set package 'mini_pupper_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.413s] DEBUG:colcon.colcon_core.verb:Building package 'mini_pupper_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/build/mini_pupper_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/install/mini_pupper_bringup', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_bringup', 'symlink_install': True, 'test_result_base': None}
+[2.413s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[2.416s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ'
+[2.417s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/champ/champ/champ' with build type 'ament_cmake'
+[2.417s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/champ/champ/champ'
+[2.442s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.442s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.443s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ
+[10.802s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ
+[10.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ
+[10.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ
+[11.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ
+[12.172s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ)
+[12.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ
+[12.199s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ' for CMake module files
+[12.202s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ' for CMake config files
+[12.204s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ', 'cmake_prefix_path')
+[12.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ/share/champ/hook/cmake_prefix_path.ps1'
+[12.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ/share/champ/hook/cmake_prefix_path.dsv'
+[12.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ/share/champ/hook/cmake_prefix_path.sh'
+[12.220s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ/bin'
+[12.220s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ/lib/pkgconfig/champ.pc'
+[12.221s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ/lib/python3.10/site-packages'
+[12.222s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ/bin'
+[12.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ/share/champ/package.ps1'
+[12.226s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ/share/champ/package.dsv'
+[12.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ/share/champ/package.sh'
+[12.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ/share/champ/package.bash'
+[12.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ/share/champ/package.zsh'
+[12.241s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ/share/colcon-core/packages/champ)
+[12.327s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ)
+[12.328s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ' for CMake module files
+[12.331s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ' for CMake config files
+[12.333s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ', 'cmake_prefix_path')
+[12.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ/share/champ/hook/cmake_prefix_path.ps1'
+[12.336s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ/share/champ/hook/cmake_prefix_path.dsv'
+[12.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ/share/champ/hook/cmake_prefix_path.sh'
+[12.339s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ/bin'
+[12.340s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ/lib/pkgconfig/champ.pc'
+[12.341s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ/lib/python3.10/site-packages'
+[12.341s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ/bin'
+[12.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ/share/champ/package.ps1'
+[12.345s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ/share/champ/package.dsv'
+[12.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ/share/champ/package.sh'
+[12.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ/share/champ/package.bash'
+[12.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ/share/champ/package.zsh'
+[12.353s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ/share/colcon-core/packages/champ)
+[12.354s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ' finished with '0'
+[12.354s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_config'
+[12.355s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_config' with build type 'ament_cmake'
+[12.355s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_config'
+[12.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_config
+[15.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_config
+[15.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_config
+[15.174s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_config
+[15.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_config
+[16.215s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_config)
+[16.216s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config' for CMake module files
+[16.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_config
+[16.219s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config' for CMake config files
+[16.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_config', 'cmake_prefix_path')
+[16.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/hook/cmake_prefix_path.ps1'
+[16.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/hook/cmake_prefix_path.dsv'
+[16.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/hook/cmake_prefix_path.sh'
+[16.227s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config/bin'
+[16.228s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config/lib/pkgconfig/champ_config.pc'
+[16.228s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config/lib/python3.10/site-packages'
+[16.229s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config/bin'
+[16.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.ps1'
+[16.232s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.dsv'
+[16.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.sh'
+[16.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.bash'
+[16.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.zsh'
+[16.238s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_config/share/colcon-core/packages/champ_config)
+[16.329s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_config)
+[16.330s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config' for CMake module files
+[16.333s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config' for CMake config files
+[16.335s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_config', 'cmake_prefix_path')
+[16.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/hook/cmake_prefix_path.ps1'
+[16.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/hook/cmake_prefix_path.dsv'
+[16.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/hook/cmake_prefix_path.sh'
+[16.374s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config/bin'
+[16.374s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config/lib/pkgconfig/champ_config.pc'
+[16.375s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config/lib/python3.10/site-packages'
+[16.376s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_config/bin'
+[16.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.ps1'
+[16.379s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.dsv'
+[16.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.sh'
+[16.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.bash'
+[16.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_config/share/champ_config/package.zsh'
+[16.422s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_config/share/colcon-core/packages/champ_config)
+[16.423s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_config' finished with '0'
+[16.423s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_description'
+[16.424s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_description' with build type 'ament_cmake'
+[16.424s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_description'
+[16.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_description
+[20.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_description
+[20.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_description
+[20.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_description
+[20.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_description
+[22.129s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_description)
+[22.130s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description' for CMake module files
+[22.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_description
+[22.134s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description' for CMake config files
+[22.136s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_description', 'cmake_prefix_path')
+[22.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/hook/cmake_prefix_path.ps1'
+[22.139s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/hook/cmake_prefix_path.dsv'
+[22.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/hook/cmake_prefix_path.sh'
+[22.142s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description/bin'
+[22.143s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description/lib/pkgconfig/champ_description.pc'
+[22.143s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description/lib/python3.10/site-packages'
+[22.144s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description/bin'
+[22.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.ps1'
+[22.147s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.dsv'
+[22.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.sh'
+[22.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.bash'
+[22.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.zsh'
+[22.153s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_description/share/colcon-core/packages/champ_description)
+[22.239s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_description)
+[22.240s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description' for CMake module files
+[22.243s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description' for CMake config files
+[22.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_description', 'cmake_prefix_path')
+[22.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/hook/cmake_prefix_path.ps1'
+[22.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/hook/cmake_prefix_path.dsv'
+[22.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/hook/cmake_prefix_path.sh'
+[22.252s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description/bin'
+[22.253s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description/lib/pkgconfig/champ_description.pc'
+[22.253s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description/lib/python3.10/site-packages'
+[22.254s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_description/bin'
+[22.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.ps1'
+[22.258s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.dsv'
+[22.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.sh'
+[22.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.bash'
+[22.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.zsh'
+[22.265s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_description/share/colcon-core/packages/champ_description)
+[22.266s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_description' finished with '0'
+[22.267s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_msgs'
+[22.267s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_msgs' with build type 'ament_cmake'
+[22.268s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_msgs'
+[22.269s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.269s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.299s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_msgs
+[30.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_msgs
+[30.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_msgs
+[118.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_msgs
+[119.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_msgs
+[124.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_msgs)
+[124.973s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs' for CMake module files
+[124.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_msgs
+[124.978s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs' for CMake config files
+[124.984s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'cmake_prefix_path')
+[124.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.ps1'
+[124.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.dsv'
+[124.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.sh'
+[124.990s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/lib'
+[124.990s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'ld_library_path_lib')
+[124.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.ps1'
+[124.993s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.dsv'
+[124.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.sh'
+[124.995s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/bin'
+[124.996s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/lib/pkgconfig/champ_msgs.pc'
+[124.997s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/lib/python3.10/site-packages'
+[124.997s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/bin'
+[124.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.ps1'
+[125.001s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.dsv'
+[125.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.sh'
+[125.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.bash'
+[125.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.zsh'
+[125.007s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_msgs/share/colcon-core/packages/champ_msgs)
+[125.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_msgs)
+[125.972s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs' for CMake module files
+[125.976s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs' for CMake config files
+[125.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'cmake_prefix_path')
+[125.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.ps1'
+[125.985s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.dsv'
+[125.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.sh'
+[125.989s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/lib'
+[125.989s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'ld_library_path_lib')
+[125.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.ps1'
+[125.992s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.dsv'
+[125.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.sh'
+[125.995s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/bin'
+[125.996s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/lib/pkgconfig/champ_msgs.pc'
+[125.997s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/lib/python3.10/site-packages'
+[125.997s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_msgs/bin'
+[125.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.ps1'
+[126.001s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.dsv'
+[126.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.sh'
+[126.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.bash'
+[126.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_msgs/share/champ_msgs/package.zsh'
+[126.009s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_msgs/share/colcon-core/packages/champ_msgs)
+[126.010s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_msgs' finished with '0'
+[126.010s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_teleop'
+[126.011s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/champ/champ_teleop' with build type 'ament_cmake'
+[126.012s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/champ/champ_teleop'
+[126.012s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[126.013s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[126.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ_teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_teleop
+[128.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ_teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_teleop
+[128.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_teleop
+[128.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_teleop
+[128.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_teleop
+[129.455s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_teleop)
+[129.456s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop' for CMake module files
+[129.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_teleop
+[129.459s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop' for CMake config files
+[129.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_teleop', 'cmake_prefix_path')
+[129.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/hook/cmake_prefix_path.ps1'
+[129.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/hook/cmake_prefix_path.dsv'
+[129.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/hook/cmake_prefix_path.sh'
+[129.467s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/lib'
+[129.468s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/bin'
+[129.468s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/lib/pkgconfig/champ_teleop.pc'
+[129.469s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/lib/python3.10/site-packages'
+[129.470s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/bin'
+[129.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.ps1'
+[129.472s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.dsv'
+[129.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.sh'
+[129.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.bash'
+[129.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.zsh'
+[129.478s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_teleop/share/colcon-core/packages/champ_teleop)
+[129.565s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_teleop)
+[129.566s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop' for CMake module files
+[129.568s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop' for CMake config files
+[129.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_teleop', 'cmake_prefix_path')
+[129.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/hook/cmake_prefix_path.ps1'
+[129.574s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/hook/cmake_prefix_path.dsv'
+[129.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/hook/cmake_prefix_path.sh'
+[129.577s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/lib'
+[129.578s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/bin'
+[129.578s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/lib/pkgconfig/champ_teleop.pc'
+[129.579s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/lib/python3.10/site-packages'
+[129.580s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_teleop/bin'
+[129.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.ps1'
+[129.583s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.dsv'
+[129.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.sh'
+[129.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.bash'
+[129.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_teleop/share/champ_teleop/package.zsh'
+[129.591s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_teleop/share/colcon-core/packages/champ_teleop)
+[129.592s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_teleop' finished with '0'
+[129.593s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'ldlidar_stl_ros2'
+[129.593s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/ldlidar_stl_ros' with build type 'ament_cmake'
+[129.594s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/ldlidar_stl_ros'
+[129.595s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[129.595s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[129.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/ldlidar_stl_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2
+[136.834s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/ldlidar_stl_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2
+[136.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/ldlidar_stl_ros2
+[173.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/ldlidar_stl_ros2
+[173.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/ldlidar_stl_ros2
+[173.923s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_stl_ros2)
+[173.924s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2' for CMake module files
+[173.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/ldlidar_stl_ros2
+[173.928s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2' for CMake config files
+[173.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_stl_ros2', 'cmake_prefix_path')
+[173.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/hook/cmake_prefix_path.ps1'
+[173.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/hook/cmake_prefix_path.dsv'
+[173.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/hook/cmake_prefix_path.sh'
+[173.936s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/lib'
+[173.937s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/bin'
+[173.937s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/lib/pkgconfig/ldlidar_stl_ros2.pc'
+[173.938s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/lib/python3.10/site-packages'
+[173.939s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/bin'
+[173.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.ps1'
+[173.941s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv'
+[173.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.sh'
+[173.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.bash'
+[173.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.zsh'
+[173.947s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/colcon-core/packages/ldlidar_stl_ros2)
+[174.114s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_stl_ros2)
+[174.115s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2' for CMake module files
+[174.117s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2' for CMake config files
+[174.120s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_stl_ros2', 'cmake_prefix_path')
+[174.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/hook/cmake_prefix_path.ps1'
+[174.123s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/hook/cmake_prefix_path.dsv'
+[174.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/hook/cmake_prefix_path.sh'
+[174.127s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/lib'
+[174.127s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/bin'
+[174.127s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/lib/pkgconfig/ldlidar_stl_ros2.pc'
+[174.128s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/lib/python3.10/site-packages'
+[174.129s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/bin'
+[174.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.ps1'
+[174.132s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv'
+[174.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.sh'
+[174.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.bash'
+[174.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.zsh'
+[174.140s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2/share/colcon-core/packages/ldlidar_stl_ros2)
+[174.141s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'ldlidar_stl_ros2' finished with '0'
+[174.141s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_2_description'
+[174.142s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_2_description' with build type 'ament_cmake'
+[174.142s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_2_description'
+[174.143s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[174.143s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[174.174s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_2_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_2_description
+[177.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_2_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_2_description
+[177.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_2_description
+[177.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_2_description
+[177.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_2_description
+[178.974s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_2_description)
+[178.975s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description' for CMake module files
+[178.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_2_description
+[178.979s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description' for CMake config files
+[178.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_2_description', 'cmake_prefix_path')
+[178.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/hook/cmake_prefix_path.ps1'
+[178.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/hook/cmake_prefix_path.dsv'
+[178.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/hook/cmake_prefix_path.sh'
+[178.987s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/bin'
+[178.987s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/lib/pkgconfig/mini_pupper_2_description.pc'
+[178.988s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/lib/python3.10/site-packages'
+[178.989s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/bin'
+[178.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.ps1'
+[178.992s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.dsv'
+[178.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.sh'
+[178.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.bash'
+[178.996s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.zsh'
+[178.998s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/colcon-core/packages/mini_pupper_2_description)
+[179.084s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_2_description)
+[179.085s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description' for CMake module files
+[179.087s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description' for CMake config files
+[179.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_2_description', 'cmake_prefix_path')
+[179.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/hook/cmake_prefix_path.ps1'
+[179.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/hook/cmake_prefix_path.dsv'
+[179.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/hook/cmake_prefix_path.sh'
+[179.096s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/bin'
+[179.097s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/lib/pkgconfig/mini_pupper_2_description.pc'
+[179.098s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/lib/python3.10/site-packages'
+[179.098s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/bin'
+[179.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.ps1'
+[179.102s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.dsv'
+[179.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.sh'
+[179.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.bash'
+[179.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/mini_pupper_2_description/package.zsh'
+[179.110s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_2_description/share/colcon-core/packages/mini_pupper_2_description)
+[179.111s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_2_description' finished with '0'
+[179.112s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_description'
+[179.112s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_description' with build type 'ament_cmake'
+[179.112s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_description'
+[179.114s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[179.114s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[179.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_description
+[182.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_description
+[182.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_description
+[182.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_description
+[182.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_description
+[184.022s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_description)
+[184.024s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description' for CMake module files
+[184.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_description
+[184.028s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description' for CMake config files
+[184.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_description', 'cmake_prefix_path')
+[184.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/hook/cmake_prefix_path.ps1'
+[184.033s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/hook/cmake_prefix_path.dsv'
+[184.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/hook/cmake_prefix_path.sh'
+[184.036s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description/bin'
+[184.037s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description/lib/pkgconfig/mini_pupper_description.pc'
+[184.038s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description/lib/python3.10/site-packages'
+[184.038s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description/bin'
+[184.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.ps1'
+[184.041s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.dsv'
+[184.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.sh'
+[184.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.bash'
+[184.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.zsh'
+[184.047s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_description/share/colcon-core/packages/mini_pupper_description)
+[184.133s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_description)
+[184.134s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description' for CMake module files
+[184.137s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description' for CMake config files
+[184.140s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_description', 'cmake_prefix_path')
+[184.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/hook/cmake_prefix_path.ps1'
+[184.143s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/hook/cmake_prefix_path.dsv'
+[184.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/hook/cmake_prefix_path.sh'
+[184.146s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description/bin'
+[184.147s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description/lib/pkgconfig/mini_pupper_description.pc'
+[184.148s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description/lib/python3.10/site-packages'
+[184.148s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_description/bin'
+[184.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.ps1'
+[184.152s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.dsv'
+[184.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.sh'
+[184.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.bash'
+[184.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.zsh'
+[184.160s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_description/share/colcon-core/packages/mini_pupper_description)
+[184.161s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_description' finished with '0'
+[184.162s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_driver'
+[184.162s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_driver' with build type 'ament_python'
+[184.163s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_driver', 'ament_prefix_path')
+[184.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/hook/ament_prefix_path.ps1'
+[184.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/hook/ament_prefix_path.dsv'
+[184.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/hook/ament_prefix_path.sh'
+[184.170s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[184.170s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[185.435s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_driver'
+[185.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[185.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[187.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_driver': PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_driver/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/mini_pupper_driver/build --no-deps symlink_data
+[189.868s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_driver', 'pythonpath_develop')
+[189.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/build/mini_pupper_driver/share/mini_pupper_driver/hook/pythonpath_develop.ps1'
+[189.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_driver' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_driver/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/mini_pupper_driver/build --no-deps symlink_data
+[189.872s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/build/mini_pupper_driver/share/mini_pupper_driver/hook/pythonpath_develop.dsv'
+[189.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/build/mini_pupper_driver/share/mini_pupper_driver/hook/pythonpath_develop.sh'
+[189.875s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_driver' for CMake module files
+[189.877s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_driver' for CMake config files
+[189.880s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_driver/lib'
+[189.881s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_driver/bin'
+[189.881s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_driver/lib/pkgconfig/mini_pupper_driver.pc'
+[189.882s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_driver/lib/python3.10/site-packages'
+[189.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_driver', 'pythonpath')
+[189.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/hook/pythonpath.ps1'
+[189.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/hook/pythonpath.dsv'
+[189.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/hook/pythonpath.sh'
+[189.888s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_driver/bin'
+[189.888s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_driver)
+[189.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/package.ps1'
+[189.891s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/package.dsv'
+[189.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/package.sh'
+[189.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/package.bash'
+[189.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/mini_pupper_driver/package.zsh'
+[189.897s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_driver/share/colcon-core/packages/mini_pupper_driver)
+[189.898s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_driver' finished with '0'
+[189.899s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_interfaces'
+[189.899s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_interfaces' with build type 'ament_cmake'
+[189.900s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_interfaces'
+[189.901s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[189.901s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[189.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_interfaces
+[197.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_interfaces
+[197.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_interfaces
+[240.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_interfaces
+[241.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_interfaces
+[244.390s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_interfaces)
+[244.391s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces' for CMake module files
+[244.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_interfaces
+[244.395s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces' for CMake config files
+[244.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_interfaces', 'cmake_prefix_path')
+[244.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/cmake_prefix_path.ps1'
+[244.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/cmake_prefix_path.dsv'
+[244.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/cmake_prefix_path.sh'
+[244.408s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib'
+[244.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_interfaces', 'ld_library_path_lib')
+[244.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/ld_library_path_lib.ps1'
+[244.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/ld_library_path_lib.dsv'
+[244.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/ld_library_path_lib.sh'
+[244.414s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/bin'
+[244.414s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib/pkgconfig/mini_pupper_interfaces.pc'
+[244.415s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib/python3.10/site-packages'
+[244.416s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/bin'
+[244.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.ps1'
+[244.419s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.dsv'
+[244.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.sh'
+[244.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.bash'
+[244.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.zsh'
+[244.425s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/colcon-core/packages/mini_pupper_interfaces)
+[244.864s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_interfaces)
+[244.865s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces' for CMake module files
+[244.869s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces' for CMake config files
+[244.875s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_interfaces', 'cmake_prefix_path')
+[244.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/cmake_prefix_path.ps1'
+[244.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/cmake_prefix_path.dsv'
+[244.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/cmake_prefix_path.sh'
+[244.881s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib'
+[244.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_interfaces', 'ld_library_path_lib')
+[244.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/ld_library_path_lib.ps1'
+[244.885s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/ld_library_path_lib.dsv'
+[244.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/hook/ld_library_path_lib.sh'
+[244.888s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/bin'
+[244.889s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib/pkgconfig/mini_pupper_interfaces.pc'
+[244.890s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib/python3.10/site-packages'
+[244.891s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/bin'
+[244.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.ps1'
+[244.894s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.dsv'
+[244.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.sh'
+[244.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.bash'
+[244.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/mini_pupper_interfaces/package.zsh'
+[244.902s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/share/colcon-core/packages/mini_pupper_interfaces)
+[244.904s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_interfaces' finished with '0'
+[244.904s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_music'
+[244.904s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_music' with build type 'ament_python'
+[244.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_music', 'ament_prefix_path')
+[244.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/hook/ament_prefix_path.ps1'
+[244.909s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/hook/ament_prefix_path.dsv'
+[244.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/hook/ament_prefix_path.sh'
+[244.913s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[244.914s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[246.164s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'mini_pupper_music' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[246.166s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_music'
+[246.167s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[246.167s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[247.907s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_music': PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_music/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/mini_pupper_music/build --no-deps symlink_data
+[250.114s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_music', 'pythonpath_develop')
+[250.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/build/mini_pupper_music/share/mini_pupper_music/hook/pythonpath_develop.ps1'
+[250.116s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_music' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_music/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/mini_pupper_music/build --no-deps symlink_data
+[250.118s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/build/mini_pupper_music/share/mini_pupper_music/hook/pythonpath_develop.dsv'
+[250.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/build/mini_pupper_music/share/mini_pupper_music/hook/pythonpath_develop.sh'
+[250.121s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_music' for CMake module files
+[250.123s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_music' for CMake config files
+[250.126s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_music/lib'
+[250.126s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_music/bin'
+[250.126s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/pkgconfig/mini_pupper_music.pc'
+[250.127s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages'
+[250.127s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_music', 'pythonpath')
+[250.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/hook/pythonpath.ps1'
+[250.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/hook/pythonpath.dsv'
+[250.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/hook/pythonpath.sh'
+[250.133s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_music/bin'
+[250.133s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_music)
+[250.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/package.ps1'
+[250.137s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/package.dsv'
+[250.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/package.sh'
+[250.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/package.bash'
+[250.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_music/share/mini_pupper_music/package.zsh'
+[250.144s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_music/share/colcon-core/packages/mini_pupper_music)
+[250.145s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_music' finished with '0'
+[250.145s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_base'
+[250.145s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_base' with build type 'ament_cmake'
+[250.146s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_base'
+[250.147s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[250.147s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[250.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_base': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_base
+[260.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_base' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_base
+[260.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_base': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_base
+[507.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_base' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_base
+[507.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_base': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_base
+[508.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_base)
+[508.385s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base' for CMake module files
+[508.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_base' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_base
+[508.389s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base' for CMake config files
+[508.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'cmake_prefix_path')
+[508.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/cmake_prefix_path.ps1'
+[508.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/cmake_prefix_path.dsv'
+[508.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/cmake_prefix_path.sh'
+[508.396s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/lib'
+[508.397s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'ld_library_path_lib')
+[508.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/ld_library_path_lib.ps1'
+[508.399s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/ld_library_path_lib.dsv'
+[508.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/ld_library_path_lib.sh'
+[508.403s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/bin'
+[508.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'path')
+[508.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/path.ps1'
+[508.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/path.dsv'
+[508.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/path.sh'
+[508.408s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/lib/pkgconfig/champ_base.pc'
+[508.409s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/lib/python3.10/site-packages'
+[508.410s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/bin'
+[508.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'pythonscriptspath')
+[508.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/pythonscriptspath.ps1'
+[508.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/pythonscriptspath.dsv'
+[508.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/pythonscriptspath.sh'
+[508.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.ps1'
+[508.419s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.dsv'
+[508.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.sh'
+[508.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.bash'
+[508.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.zsh'
+[508.425s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_base/share/colcon-core/packages/champ_base)
+[508.599s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_base)
+[508.600s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base' for CMake module files
+[508.603s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base' for CMake config files
+[508.605s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'cmake_prefix_path')
+[508.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/cmake_prefix_path.ps1'
+[508.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/cmake_prefix_path.dsv'
+[508.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/cmake_prefix_path.sh'
+[508.612s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/lib'
+[508.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'ld_library_path_lib')
+[508.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/ld_library_path_lib.ps1'
+[508.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/ld_library_path_lib.dsv'
+[508.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/ld_library_path_lib.sh'
+[508.619s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/bin'
+[508.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'path')
+[508.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/path.ps1'
+[508.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/path.dsv'
+[508.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/path.sh'
+[508.627s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/lib/pkgconfig/champ_base.pc'
+[508.628s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/lib/python3.10/site-packages'
+[508.629s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_base/bin'
+[508.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'pythonscriptspath')
+[508.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/pythonscriptspath.ps1'
+[508.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/pythonscriptspath.dsv'
+[508.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/hook/pythonscriptspath.sh'
+[508.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.ps1'
+[508.639s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.dsv'
+[508.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.sh'
+[508.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.bash'
+[508.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_base/share/champ_base/package.zsh'
+[508.648s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_base/share/colcon-core/packages/champ_base)
+[508.649s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_base' finished with '0'
+[508.650s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_dance'
+[508.651s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_dance' with build type 'ament_python'
+[508.651s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_dance', 'ament_prefix_path')
+[508.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/hook/ament_prefix_path.ps1'
+[508.655s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/hook/ament_prefix_path.dsv'
+[508.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/hook/ament_prefix_path.sh'
+[508.658s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[508.658s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[509.952s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_dance'
+[509.953s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[509.953s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[511.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_dance': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mini_pupper_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mini_pupper_interfaces LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_dance/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_dance/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/mini_pupper_dance/build --no-deps symlink_data
+[513.927s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_dance', 'pythonpath_develop')
+[513.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/build/mini_pupper_dance/share/mini_pupper_dance/hook/pythonpath_develop.ps1'
+[513.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_dance' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mini_pupper_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mini_pupper_interfaces LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/build/mini_pupper_dance/prefix_override:/home/ubuntu/ros2_ws/install/mini_pupper_dance/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/mini_pupper_dance/build --no-deps symlink_data
+[513.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/build/mini_pupper_dance/share/mini_pupper_dance/hook/pythonpath_develop.dsv'
+[513.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/build/mini_pupper_dance/share/mini_pupper_dance/hook/pythonpath_develop.sh'
+[513.935s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_dance' for CMake module files
+[513.937s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_dance' for CMake config files
+[513.939s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_dance/lib'
+[513.940s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_dance/bin'
+[513.940s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_dance/lib/pkgconfig/mini_pupper_dance.pc'
+[513.941s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_dance/lib/python3.10/site-packages'
+[513.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_dance', 'pythonpath')
+[513.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/hook/pythonpath.ps1'
+[513.944s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/hook/pythonpath.dsv'
+[513.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/hook/pythonpath.sh'
+[513.947s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_dance/bin'
+[513.947s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_dance)
+[513.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/package.ps1'
+[513.951s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/package.dsv'
+[513.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/package.sh'
+[513.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/package.bash'
+[513.956s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/mini_pupper_dance/package.zsh'
+[513.957s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_dance/share/colcon-core/packages/mini_pupper_dance)
+[513.958s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_dance' finished with '0'
+[513.958s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_bringup'
+[513.959s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_bringup' with build type 'ament_cmake'
+[513.959s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/champ/champ/champ_bringup'
+[513.960s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[513.960s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[514.012s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_bringup': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_bringup
+[517.175s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_bringup' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_bringup
+[517.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_bringup': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_bringup
+[518.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_bringup' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_bringup
+[518.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/champ_bringup': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_bringup
+[520.255s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_bringup)
+[520.256s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup' for CMake module files
+[520.257s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/champ_bringup' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_bringup
+[520.259s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup' for CMake config files
+[520.263s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_bringup', 'cmake_prefix_path')
+[520.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/hook/cmake_prefix_path.ps1'
+[520.266s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/hook/cmake_prefix_path.dsv'
+[520.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/hook/cmake_prefix_path.sh'
+[520.269s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/lib'
+[520.270s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/bin'
+[520.270s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/lib/pkgconfig/champ_bringup.pc'
+[520.271s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/lib/python3.10/site-packages'
+[520.272s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/bin'
+[520.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.ps1'
+[520.275s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.dsv'
+[520.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.sh'
+[520.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.bash'
+[520.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.zsh'
+[520.280s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_bringup/share/colcon-core/packages/champ_bringup)
+[520.374s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_bringup)
+[520.375s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup' for CMake module files
+[520.378s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup' for CMake config files
+[520.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_bringup', 'cmake_prefix_path')
+[520.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/hook/cmake_prefix_path.ps1'
+[520.384s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/hook/cmake_prefix_path.dsv'
+[520.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/hook/cmake_prefix_path.sh'
+[520.388s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/lib'
+[520.388s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/bin'
+[520.388s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/lib/pkgconfig/champ_bringup.pc'
+[520.389s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/lib/python3.10/site-packages'
+[520.390s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/champ_bringup/bin'
+[520.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.ps1'
+[520.394s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.dsv'
+[520.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.sh'
+[520.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.bash'
+[520.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/champ_bringup/share/champ_bringup/package.zsh'
+[520.402s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/champ_bringup/share/colcon-core/packages/champ_bringup)
+[520.403s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'champ_bringup' finished with '0'
+[520.404s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_bringup'
+[520.404s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_bringup' with build type 'ament_cmake'
+[520.404s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_bringup'
+[520.405s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[520.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[520.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_bringup': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_bringup
+[523.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_bringup' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_bringup
+[523.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_bringup': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_bringup
+[523.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_bringup' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_bringup
+[523.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_bringup': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_bringup
+[524.271s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_bringup)
+[524.272s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup' for CMake module files
+[524.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_bringup' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/ubuntu/ros2_ws/install/champ_base/bin:${PATH} PYTHONPATH=/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_bringup
+[524.276s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup' for CMake config files
+[524.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_bringup', 'cmake_prefix_path')
+[524.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/hook/cmake_prefix_path.ps1'
+[524.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/hook/cmake_prefix_path.dsv'
+[524.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/hook/cmake_prefix_path.sh'
+[524.284s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/bin'
+[524.284s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/lib/pkgconfig/mini_pupper_bringup.pc'
+[524.285s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/lib/python3.10/site-packages'
+[524.286s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/bin'
+[524.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.ps1'
+[524.289s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.dsv'
+[524.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.sh'
+[524.292s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.bash'
+[524.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.zsh'
+[524.295s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/colcon-core/packages/mini_pupper_bringup)
+[524.382s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mini_pupper_bringup)
+[524.383s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup' for CMake module files
+[524.386s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup' for CMake config files
+[524.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('mini_pupper_bringup', 'cmake_prefix_path')
+[524.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/hook/cmake_prefix_path.ps1'
+[524.391s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/hook/cmake_prefix_path.dsv'
+[524.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/hook/cmake_prefix_path.sh'
+[524.395s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/bin'
+[524.395s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/lib/pkgconfig/mini_pupper_bringup.pc'
+[524.396s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/lib/python3.10/site-packages'
+[524.397s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/bin'
+[524.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.ps1'
+[524.400s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.dsv'
+[524.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.sh'
+[524.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.bash'
+[524.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/mini_pupper_bringup/package.zsh'
+[524.408s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/install/mini_pupper_bringup/share/colcon-core/packages/mini_pupper_bringup)
+[524.409s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mini_pupper_bringup' finished with '0'
+[524.409s] DEBUG:colcon.colcon_core.executor.sequential:closing loop
+[524.410s] DEBUG:colcon.colcon_core.executor.sequential:loop closed
+[524.411s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[524.435s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[524.435s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[524.435s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[524.531s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[524.533s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/install/local_setup.ps1'
+[524.538s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2_ws/install/_local_setup_util_ps1.py'
+[524.555s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/install/setup.ps1'
+[524.565s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/install/local_setup.sh'
+[524.568s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2_ws/install/_local_setup_util_sh.py'
+[524.571s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/install/setup.sh'
+[524.579s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/install/local_setup.bash'
+[524.582s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/install/setup.bash'
+[524.593s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/install/local_setup.zsh'
+[524.605s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/install/setup.zsh'

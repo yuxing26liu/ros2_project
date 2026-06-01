@@ -1,0 +1,5 @@
+[console_scripts]
+client = go_pupper_srv.client_go_pupper:main
+salsa = go_pupper_srv.sample_controller:main
+service = go_pupper_srv.service_go_pupper:main
+

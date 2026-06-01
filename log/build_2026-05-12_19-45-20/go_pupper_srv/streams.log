@@ -1,0 +1,46 @@
+[5.053s] Invoking command in '/home/ubuntu/ros2_ws/src/go_pupper_srv': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/pupper_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/pupper_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/pupper_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/build/go_pupper_srv/prefix_override:/home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/pupper_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/go_pupper_srv build --build-base /home/ubuntu/ros2_ws/build/go_pupper_srv/build install --record /home/ubuntu/ros2_ws/build/go_pupper_srv/install.log --single-version-externally-managed install_data
+[6.643s] running egg_info
+[6.645s] creating ../../build/go_pupper_srv/go_pupper_srv.egg-info
+[6.646s] writing ../../build/go_pupper_srv/go_pupper_srv.egg-info/PKG-INFO
+[6.648s] writing dependency_links to ../../build/go_pupper_srv/go_pupper_srv.egg-info/dependency_links.txt
+[6.649s] writing entry points to ../../build/go_pupper_srv/go_pupper_srv.egg-info/entry_points.txt
+[6.650s] writing requirements to ../../build/go_pupper_srv/go_pupper_srv.egg-info/requires.txt
+[6.651s] writing top-level names to ../../build/go_pupper_srv/go_pupper_srv.egg-info/top_level.txt
+[6.652s] writing manifest file '../../build/go_pupper_srv/go_pupper_srv.egg-info/SOURCES.txt'
+[6.660s] reading manifest file '../../build/go_pupper_srv/go_pupper_srv.egg-info/SOURCES.txt'
+[6.662s] adding license file 'LICENSE'
+[6.664s] writing manifest file '../../build/go_pupper_srv/go_pupper_srv.egg-info/SOURCES.txt'
+[6.665s] running build
+[6.665s] running build_py
+[6.666s] creating /home/ubuntu/ros2_ws/build/go_pupper_srv/build
+[6.666s] creating /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib
+[6.667s] creating /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+[6.667s] copying go_pupper_srv/__init__.py -> /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+[6.668s] copying go_pupper_srv/sample_controller.py -> /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+[6.672s] copying go_pupper_srv/client_go_pupper.py -> /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+[6.674s] copying go_pupper_srv/service_go_pupper.py -> /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv
+[6.676s] running install
+[6.677s] running install_lib
+[6.682s] creating /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+[6.682s] copying /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv/__init__.py -> /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+[6.683s] copying /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv/sample_controller.py -> /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+[6.685s] copying /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv/client_go_pupper.py -> /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+[6.686s] copying /home/ubuntu/ros2_ws/build/go_pupper_srv/build/lib/go_pupper_srv/service_go_pupper.py -> /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv
+[6.699s] byte-compiling /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv/__init__.py to __init__.cpython-310.pyc
+[6.700s] byte-compiling /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv/sample_controller.py to sample_controller.cpython-310.pyc
+[6.702s] byte-compiling /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv/client_go_pupper.py to client_go_pupper.cpython-310.pyc
+[6.702s] byte-compiling /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv/service_go_pupper.py to service_go_pupper.cpython-310.pyc
+[6.703s] running install_data
+[6.704s] creating /home/ubuntu/ros2_ws/install/go_pupper_srv/share/ament_index
+[6.705s] creating /home/ubuntu/ros2_ws/install/go_pupper_srv/share/ament_index/resource_index
+[6.706s] creating /home/ubuntu/ros2_ws/install/go_pupper_srv/share/ament_index/resource_index/packages
+[6.706s] copying resource/go_pupper_srv -> /home/ubuntu/ros2_ws/install/go_pupper_srv/share/ament_index/resource_index/packages
+[6.707s] copying package.xml -> /home/ubuntu/ros2_ws/install/go_pupper_srv/share/go_pupper_srv
+[6.707s] running install_egg_info
+[6.717s] Copying ../../build/go_pupper_srv/go_pupper_srv.egg-info to /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages/go_pupper_srv-0.0.0-py3.10.egg-info
+[6.723s] running install_scripts
+[6.822s] Installing client script to /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/go_pupper_srv
+[6.823s] Installing salsa script to /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/go_pupper_srv
+[6.824s] Installing service script to /home/ubuntu/ros2_ws/install/go_pupper_srv/lib/go_pupper_srv
+[6.826s] writing list of installed files to '/home/ubuntu/ros2_ws/build/go_pupper_srv/install.log'
+[6.969s] Invoked command in '/home/ubuntu/ros2_ws/src/go_pupper_srv' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/pupper_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/pupper_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/pupper_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/build/go_pupper_srv/prefix_override:/home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/pupper_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/go_pupper_srv build --build-base /home/ubuntu/ros2_ws/build/go_pupper_srv/build install --record /home/ubuntu/ros2_ws/build/go_pupper_srv/install.log --single-version-externally-managed install_data

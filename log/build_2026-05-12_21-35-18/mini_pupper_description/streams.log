@@ -1,0 +1,76 @@
+[0.176s] Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/lab2task4:/home/ubuntu/ros2_ws/install/go_pupper_srv:/home/ubuntu/ros2_ws/install/mini_pupper_music:/home/ubuntu/ros2_ws/install/mini_pupper_dance:/home/ubuntu/ros2_ws/install/mini_pupper_driver:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_description -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_description
+[0.289s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.918s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.010s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.124s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.249s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.264s] -- Added test 'lint_cmake' to check CMake code style
+[3.277s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.345s] -- Added test 'xmllint' to check XML markup files
+[3.363s] -- Configuring done
+[3.489s] -- Generating done
+[3.503s] -- Build files have been written to: /home/ubuntu/ros2_ws/build/mini_pupper_description
+[3.520s] Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/lab2task4:/home/ubuntu/ros2_ws/install/go_pupper_srv:/home/ubuntu/ros2_ws/install/mini_pupper_music:/home/ubuntu/ros2_ws/install/mini_pupper_dance:/home/ubuntu/ros2_ws/install/mini_pupper_driver:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/mini_pupper_ros/mini_pupper_description -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/mini_pupper_description
+[3.530s] Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/lab2task4:/home/ubuntu/ros2_ws/install/go_pupper_srv:/home/ubuntu/ros2_ws/install/mini_pupper_music:/home/ubuntu/ros2_ws/install/mini_pupper_dance:/home/ubuntu/ros2_ws/install/mini_pupper_driver:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_description -- -j4 -l4
+[3.973s] Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/lab2task4:/home/ubuntu/ros2_ws/install/go_pupper_srv:/home/ubuntu/ros2_ws/install/mini_pupper_music:/home/ubuntu/ros2_ws/install/mini_pupper_dance:/home/ubuntu/ros2_ws/install/mini_pupper_driver:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/mini_pupper_description -- -j4 -l4
+[4.301s] Invoking command in '/home/ubuntu/ros2_ws/build/mini_pupper_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/lab2task4:/home/ubuntu/ros2_ws/install/go_pupper_srv:/home/ubuntu/ros2_ws/install/mini_pupper_music:/home/ubuntu/ros2_ws/install/mini_pupper_dance:/home/ubuntu/ros2_ws/install/mini_pupper_driver:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_description
+[4.335s] -- Install configuration: ""
+[4.339s] -- Execute custom install script
+[4.354s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/launch/description.launch.py
+[4.360s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/config/champ/gait.yaml
+[4.365s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/config/champ/joints.yaml
+[4.377s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/config/champ/links.yaml
+[4.378s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/config/ros_control/mini_pupper_controller.yaml
+[4.399s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/rviz/urdf_viewer.rviz
+[4.400s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/urdf/_d435.urdf.xacro
+[4.402s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/urdf/_materials.urdf.xacro
+[4.403s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/urdf/_usb_plug.urdf.xacro
+[4.409s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/urdf/mini_pupper_description.csv
+[4.410s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/urdf/mini_pupper_description.urdf
+[4.414s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/urdf/mini_pupper_description.urdf.xacro
+[4.499s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/base_link.STL
+[4.571s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/d435.dae
+[4.599s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lb1.STL
+[4.613s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lb2.STL
+[4.619s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lb3.STL
+[4.620s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lbfoot.STL
+[4.622s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lf1.STL
+[4.625s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lf2.STL
+[4.631s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lf3.STL
+[4.631s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lffoot.STL
+[4.642s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lidar.STL
+[4.645s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lpb1.STL
+[4.646s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lpb2.STL
+[4.647s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lpf1.STL
+[4.655s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/lpf2.STL
+[4.656s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/plug.stl
+[4.657s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/plug_collision.stl
+[4.660s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rb1.STL
+[4.665s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rb2.STL
+[4.670s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rb3.STL
+[4.674s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rbfoot.STL
+[4.679s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rf1.STL
+[4.686s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rf2.STL
+[4.691s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rf3.STL
+[4.696s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rffoot.STL
+[4.702s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rpb1.STL
+[4.706s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rpb2.STL
+[4.712s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rpf1.STL
+[4.713s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/rpf2.STL
+[4.715s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/meshes/yellow_plate.STL
+[4.722s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/ament_index/resource_index/package_run_dependencies/mini_pupper_description
+[4.723s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/ament_index/resource_index/parent_prefix_path/mini_pupper_description
+[4.726s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/environment/ament_prefix_path.sh
+[4.728s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/environment/ament_prefix_path.dsv
+[4.731s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/environment/path.sh
+[4.733s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/environment/path.dsv
+[4.737s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/local_setup.bash
+[4.739s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/local_setup.sh
+[4.742s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/local_setup.zsh
+[4.743s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/local_setup.dsv
+[4.744s] -- Symlinking: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.dsv
+[4.830s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/ament_index/resource_index/packages/mini_pupper_description
+[4.835s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/cmake/mini_pupper_descriptionConfig.cmake
+[4.839s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/cmake/mini_pupper_descriptionConfig-version.cmake
+[4.842s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/mini_pupper_description/share/mini_pupper_description/package.xml
+[4.854s] Invoked command in '/home/ubuntu/ros2_ws/build/mini_pupper_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/lab2task4:/home/ubuntu/ros2_ws/install/go_pupper_srv:/home/ubuntu/ros2_ws/install/mini_pupper_music:/home/ubuntu/ros2_ws/install/mini_pupper_dance:/home/ubuntu/ros2_ws/install/mini_pupper_driver:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/mini_pupper_description

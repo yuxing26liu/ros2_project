@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/lab2task4/lab2task4.egg-info/PKG-INFO
+writing dependency_links to ../../build/lab2task4/lab2task4.egg-info/dependency_links.txt
+writing entry points to ../../build/lab2task4/lab2task4.egg-info/entry_points.txt
+writing requirements to ../../build/lab2task4/lab2task4.egg-info/requires.txt
+writing top-level names to ../../build/lab2task4/lab2task4.egg-info/top_level.txt
+reading manifest file '../../build/lab2task4/lab2task4.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/lab2task4/lab2task4.egg-info/SOURCES.txt'
+running build
+running build_py
+copying lab2task4/client_go_pupper.py -> /home/ubuntu/ros2_ws/build/lab2task4/build/lib/lab2task4
+running install
+running install_lib
+copying /home/ubuntu/ros2_ws/build/lab2task4/build/lib/lab2task4/client_go_pupper.py -> /home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages/lab2task4
+byte-compiling /home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages/lab2task4/client_go_pupper.py to client_go_pupper.cpython-310.pyc
+Sorry: TabError: inconsistent use of tabs and spaces in indentation (client_go_pupper.py, line 44)
+running install_data
+error: can't copy 'resource/lab2task4': doesn't exist or not a regular file

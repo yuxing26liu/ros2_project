@@ -1,0 +1,6 @@
+msg/Command.idl
+msg/Command.msg
+srv/GoPupper.idl
+srv/GoPupper.srv
+srv/GoPupper_Request.msg
+srv/GoPupper_Response.msg

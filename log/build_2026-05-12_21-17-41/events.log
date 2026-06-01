@@ -1,0 +1,70 @@
+[0.000000] (-) TimerEvent: {}
+[0.001074] (-) JobUnselected: {'identifier': 'champ'}
+[0.001837] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.002069] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.002246] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.002340] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.002460] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.002550] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.002638] (-) JobUnselected: {'identifier': 'go_pupper_srv'}
+[0.002724] (-) JobUnselected: {'identifier': 'ldlidar_stl_ros2'}
+[0.002811] (-) JobUnselected: {'identifier': 'mini_pupper_2_description'}
+[0.002896] (-) JobUnselected: {'identifier': 'mini_pupper_bringup'}
+[0.002982] (-) JobUnselected: {'identifier': 'mini_pupper_dance'}
+[0.003069] (-) JobUnselected: {'identifier': 'mini_pupper_description'}
+[0.003155] (-) JobUnselected: {'identifier': 'mini_pupper_driver'}
+[0.003240] (-) JobUnselected: {'identifier': 'mini_pupper_interfaces'}
+[0.003324] (-) JobUnselected: {'identifier': 'mini_pupper_music'}
+[0.003408] (-) JobUnselected: {'identifier': 'pupper_interfaces'}
+[0.003502] (lab2task4) JobQueued: {'identifier': 'lab2task4', 'dependencies': OrderedDict([('pupper_interfaces', '/home/ubuntu/ros2_ws/install/pupper_interfaces')])}
+[0.003618] (lab2task4) JobStarted: {'identifier': 'lab2task4'}
+[0.097181] (-) TimerEvent: {}
+[0.198010] (-) TimerEvent: {}
+[0.299381] (-) TimerEvent: {}
+[0.401123] (-) TimerEvent: {}
+[0.502218] (-) TimerEvent: {}
+[0.604224] (-) TimerEvent: {}
+[0.705269] (-) TimerEvent: {}
+[0.807955] (-) TimerEvent: {}
+[0.908766] (-) TimerEvent: {}
+[1.009546] (-) TimerEvent: {}
+[1.115045] (-) TimerEvent: {}
+[1.217555] (-) TimerEvent: {}
+[1.319032] (-) TimerEvent: {}
+[1.420400] (-) TimerEvent: {}
+[1.521792] (-) TimerEvent: {}
+[1.622532] (-) TimerEvent: {}
+[1.723283] (-) TimerEvent: {}
+[1.824088] (-) TimerEvent: {}
+[1.924880] (-) TimerEvent: {}
+[2.025798] (-) TimerEvent: {}
+[2.126862] (-) TimerEvent: {}
+[2.228077] (-) TimerEvent: {}
+[2.329277] (-) TimerEvent: {}
+[2.430315] (-) TimerEvent: {}
+[2.531703] (-) TimerEvent: {}
+[2.633280] (-) TimerEvent: {}
+[2.735031] (-) TimerEvent: {}
+[2.836439] (-) TimerEvent: {}
+[2.938066] (-) TimerEvent: {}
+[3.039440] (-) TimerEvent: {}
+[3.141661] (-) TimerEvent: {}
+[3.247259] (-) TimerEvent: {}
+[3.348030] (-) TimerEvent: {}
+[3.449597] (-) TimerEvent: {}
+[3.550350] (-) TimerEvent: {}
+[3.653416] (-) TimerEvent: {}
+[3.754478] (-) TimerEvent: {}
+[3.855924] (-) TimerEvent: {}
+[3.956998] (-) TimerEvent: {}
+[4.058165] (-) TimerEvent: {}
+[4.160044] (-) TimerEvent: {}
+[4.261099] (-) TimerEvent: {}
+[4.362186] (-) TimerEvent: {}
+[4.463280] (-) TimerEvent: {}
+[4.564154] (-) TimerEvent: {}
+[4.665078] (-) TimerEvent: {}
+[4.765886] (-) TimerEvent: {}
+[4.866997] (-) TimerEvent: {}
+[4.968177] (-) TimerEvent: {}
+[5.069814] (-) TimerEvent: {}

@@ -1,0 +1,169 @@
+CSE 190/276B Final Project: Project Proposal
+
+1. Project Title, Team Member Names
+Wakey Wakey
+Estella Liu, Terri Tai, Christina Xu
+2. Project Overview and Motivation
+
+Project Motivation
+Getting out of bed in the morning is a deceptively difficult challenge that we all face every day. Despite the near-universal use of alarm clocks, over half of working-age adults participate in habitual snoozing that diminishes deep sleep, increases physiological stress, and is associated with various negative long-term health outcomes [2]. Existing alarm systems, most commonly the Alarm app on phones, have a fundamental limitation: they are passive. A user can silence them with minimal physical effort and no meaningful engagement, making it too tempting to just return to sleep. Our project, Wakey Wakey, addresses this limitation by introducing a socially interactive robot that transforms waking up into a physically engaging experience. Rather than waiting to be dismissed, Wakey Wakey actively flees from the user when approached and prompts the user to play a wake-up game when caught, helping the user achieve the physical and mental stimulation necessary to transition fully out of sleep.
+The motivation for Wakey Wakey draws on several aspects of human-robot interaction research. First, our work is rooted in literature on robots as persuasive social agents. [1] has demonstrated that robots can more effectively encourage users to adopt desirable behaviors through social feedback via personality-driven interaction when compared to factual feedback. Additionally, [5] found that social rewards such as positive robot facial expressions and sounds were more effective than material rewards at changing behavior. Wakey Wakey applies this principle in the context of a user trying to hit snooze by applying physical evasion as a form of social pressure and rewarding the user in the end with congratulatory expressions and audio.
+Second, we draw on HRI work on embodied and playful robot motion. Rather than treating movement as only a functional navigation behavior, prior work has explored how zoomorphic robots can use playful movement and disruption to prompt users toward more active behavior in typically sedentary settings. For example, [3]’s work on a dog-like robot examines how playful robot interactions can encourage users to move while maintaining a comfortable and engaging experience. Wakey Wakey applies this idea to the morning routine: by retreating when approached, the robot communicates playful resistance while also forcing the user to physically leave the bed, transforming a simple alarm snooze into an embodied interaction. Additionally, Wakey Wakey aims to frame annoyance as something playful rather than purely frustrating. By teasing the user and turning the wake-up process into a small game, the robot creates a more engaging interaction, drawing on ludic HRI to create more playful and emotionally rich robot experiences [4].
+Third, we are also motivated by HRI work on recognizing user engagement. [6] frames engagement modeling as an ongoing process that infers from observed user behavior throughout interaction, rather than a fixed state. This is useful for Wakey Wakey because the robot’s behavior depends on whether the user is actually participating in the wake-up interaction by approaching, pursuing, and attempting to catch it. Our aim is to turn waking up from disjointed, unidirectional actions between the user and alarm into a bidirectional interaction that adjusts based on the user’s level of engagement.
+Lastly, our decision to use Pupper 2 in our project is grounded in previous work exploring people’s reactions to a dog-like robot. [3] found that users tended to place a mental model of a toy or a real dog on the robot pet, and most participants developed a positive perception that the robot was well-meaning and more useful in the relevant application context than a simple toy. The perceived intrusiveness was also low for a dog-like robot, particularly for those with prior experiences with dogs. However, [3] highlights that those with prior dog experience tended to project expectations about the robot’s attributes and behavior onto it. To reduce this affordance-capability mismatch, we do not plan to add strongly dog-like physical features, such as fur or a tail, to Pupper 2. Instead, we aim for users’ perceptions of the robot’s animal-likeness and lifelikeness to develop from its behavior rather than its appearance.
+
+Key Research Questions
+RQ1: To what extent does Wakey Wakey effectively prompt users to get out of bed?
+RQ2: How do users perceive Wakey Wakey’s effectiveness compared to a conventional alarm?
+RQ3: How do users perceive their interaction with Wakey Wakey in terms of playfulness, annoyance, motivation, and willingness to use it again?
+RQ4: How does Wakey Wakey’s behavior shape user perception of its social attributes, such as animacy, warmth, and competence?
+
+Main Goals
+Our main goal for this project is to develop a functional prototype in which Wakey Wakey reliably detects user approach, reacts with evasive movement, and confirms wakefulness by ensuring the user has pursued and caught it and completed a quick, interactive wake-up game. We then aim to evaluate the system with human participants to assess both its functional effectiveness and its subjective impact on user experience. Regarding stretch goals, we can design and evaluate different robot personalities expressed via movement style, vocalizations, and displayed facial expressions and their impact on how users perceive Wakey Wakey and their interaction.
+
+2.1 Overview Figure
+
+Figure 1: Storyboard of interaction between user and robot
+
+3. Project Plan
+
+Figure 2: Conceptual diagram of the main project components
+Wakey Wakey is designed to operate within a defined 2m x 2m interaction space, simulating a bedroom environment and constraining the robot's navigation to a smaller, well-defined scope. The boundary of the space will be marked on the floor with blue masking tape, and Pupper will be configured to treat the boundaries as walls using bump sensor feedback. This decision reflects the TA's guidance to hack the environment where possible. The context of use is a morning wake-up scenario: a user begins lying or sitting on a mat or couch within the space, an alarm triggers, and the interaction proceeds until the robot has confirmed the user is physically and mentally awake.
+Wakey Wakey will use the Pupper robot platform. Pupper's 4-legged mobility is vital to the social dynamic of the chase—a fleeing robotic dog feels more alive and more worth pursuing than a wheeled robot. The system will be developed in ROS2 and organized around a central finite state machine that governs all robot behavior.
+
+Technical Task
+Description
+Leader
+Alarm State Machine
+ROS2 node managing IDLE → ALARMING → FLEEING → GAME → DONE transitions; integration point for all subcomponents
+Terri
+Distance Sensing 
+Distance estimation using Pupper's built-in stereo sensors; publishes a flee trigger when the user approaches the robot within the threshold. If stereo sensing is insufficient, use AprilTag-based detection instead for accurate distance measurements. 
+Estella
+Flee Behavior / Navigation
+Pre-programmed evasive trajectories selected by user approach direction; bump sensor boundary handling to keep Pupper within the 2m x 2m interaction space
+Terri
+Lift Detection / Wakefulness Confirmation
+IMU-based lift detection: monitor Pupper's accelerometer to determine when the robot has been physically lifted off the ground (vertical accelerometer has a non-zero value), signaling that the user has caught the robot and is out of bed
+Christina
+Game Subcomponent
+“Repeat the Sequence”: Pupper displays a sequence of arrows corresponding to its touch sensors that the user must replicate exactly. Each round increases in difficulty. Pupper expresses facial/audio feedback during and after each round
+Christina
+
+Figure 3: Summarized breakdown of the major technical tasks of the project
+The system consists of five major technical subcomponents split among our team members, described below and summarized in Figure 3.
+The alarm state machine, led by Terri, forms the backbone of the system. It is implemented as a ROS2 node that maintains the robot's current state and controls transitions based on inputs from the perception and confirmation subcomponents. All other components publish to or subscribe from this central node, making it the integration point for the full system.
+The distance sensing subcomponent, led by Estella, handles the robot's perception of the user's approach. Rather than relying on human detection, this subcomponent uses Pupper's built-in stereo cameras to estimate the distance between the robot and the user in real time. When the estimated distance falls below a defined threshold, the node publishes a flee trigger to the state machine. If stereo sensing proves ineffective in the classroom environment, the team will fall back to AprilTag-based detection, in which a printed tag affixed to a fixed location in the interaction space allows Pupper to estimate user proximity via its camera with greater reliability. This approach eliminates dependence on machine learning inference and reduces sensitivity to lighting conditions and clothing variation.
+The flee behavior and navigation subcomponent, led by Terri, translates flee triggers into locomotion commands for Pupper. This subcomponent uses a set of pre-programmed fleeing trajectories selected based on the user's detected approach direction; for example, if the user approaches from the left, Pupper flees to the right. Bump sensors inform the robot of boundary contacts, triggering trajectory re-selection to keep Pupper within the 2m x 2m interaction space. This deliberate simplification allows the team to prioritize reliable movement over complex, general navigation.
+The lift detection subcomponent, led by Christina, uses Pupper's onboard IMU to detect when the robot has been physically lifted off the ground. Rather than relying on a camera-based detection that the user is out of bed, this component requires the user to actually catch and lift Pupper, which is a physically unambiguous action that serves as a reliable measurement for physical wakefulness. When the IMU detects the acceleration and orientation in the vertical direction, the node publishes a confirmation signal to the state machine, triggering the transition from FLEEING to GAME. 
+The game subcomponent, led by Christina, manages the final mental wakefulness interaction. Once the state machine enters the GAME state, this node plays a game of “repeat the sequence” by displaying a random sequence of arrows whose directions correspond to Pupper’s touch sensors. It listens for user touch input and expresses engaging, dynamic facial and audio feedback during and after each round. After the user successfully completes several rounds that increase in difficulty, a confirmation signal is published to the state machine, completing the interaction.
+4. Planned Experimental Methodology
+
+Our evaluation plan is divided into two components: robot-focused evaluation, which measures the technical reliability and performance of the system, and human-focused evaluation, which assesses the user experience and behavioral outcomes of the interaction.
+4.1 Robot-Focused Evaluation
+Robot-focused evaluation will be conducted by the development team prior to human participant testing to ensure the system meets minimum performance thresholds. We will evaluate four technical behaviors.
+First, we will assess detection accuracy and latency for the human detection subcomponent. Since our system primarily relies on Pupper’s built-in stereo sensing to estimate the user’s distance from the robot, we will test whether Pupper can reliably detect when a user enters the flee-trigger range. We will run trials under different conditions, including varying lighting levels, participant clothing colors, and distances from Pupper: 0.5m, 1.0m, 1.5m, and 2.0m. For each trial, we will record whether the robot correctly determines whether the user is inside or outside the flee threshold, and whether the ROS2 state machine publishes the correct flee trigger. We will also measure the latency between the user entering the threshold and the flee trigger being published. Acceptable performance is defined as at least 85% detection accuracy and a latency under 500ms. If the built-in stereo sensing is not accurate enough in the classroom environment, we will use an AprilTag-based fallback to provide a more controlled and reliable distance reference.. 
+Second, we will assess flee behavior reliability by running Pupper through 10 trials in the 2m x 2m interaction space with a team member approaching from each direction. We will record whether Pupper successfully selects a non-wall-colliding flee trajectory and stays within bounds. We will also test bump sensor recovery by deliberately walking Pupper toward a boundary and confirming that it stays within bounds.
+Third, we will evaluate IMU lift detection accuracy and standing detection accuracy by having a team member lift the robot and recording the proportion where the robot correctly detects it is getting lifted. This ensures the FLEEING → GAME state transition is triggered reliably only when the user is able to catch the robot.
+Fourth, we will test audio output clarity by playing the alarm sound and rooster crow at the planned volume in a classroom-noise environment and having a team member at a 2m distance rate intelligibility on a 1–5 scale.
+
+4.2 Human-Focused Evaluation
+We have a mixed-methods study to evaluate the result of Wakey Wakey.  Since Wakey Wakey is a technical system that can have social interaction with humans, our evaluation is about two main questions : can Wakey Wakey help users effectively and whether the interaction feels playful, annoying, or motivating. Our evaluation combines quantitative measures, such as behavioral measures, short survey responses, and a brief interview. This mixed-methods approach is appropriate for HRI study because it allows us to observe user behavior and subjective user experience [7].   
+We plan to recruit 4–6 participants from the class or broader engineering department for a short in-lab user study. Participants will be asked to simulate a morning wake-up scenario: they will lie on a mat within the 2m x 2m interaction space, the alarm will trigger, and they will interact with Wakey Wakey until the game concludes. Each session is expected to take approximately 15 minutes, including setup, interaction, and surveys.
+Before the interaction, participants will complete a pre-survey collecting demographic information and baseline data on their current wake-up habits, including how often they snooze, how many alarms they typically set, and their self-reported morning alertness level.
+After the interaction, participants will complete a post-survey using a combination of validated HRI scales and custom items. We will draw items from the Godspeed Questionnaire Series to assess the perceived animacy and anthropomorphism of Pupper [9], and from the Self-Assessment Manikin (SAM) to capture valence and arousal during the interaction [10]. Custom Likert items will address perceived effectiveness ("I think this would help me get out of bed"), enjoyment, and willingness to use the system again.
+We will also conduct a short semi-structured interview (3–5 minutes) after the survey to gather qualitative impressions [11]. Example questions include "What was going through your mind when the robot started running from you?", "Did the interaction feel playful, frustrating, or something else?" and "Would you change anything about the robot's behavior?"
+Behavioral outcomes will be recorded via video [6]. Two team members will independently annotate each video for time from alarm trigger to user picking up the robot, whether the user successfully completed the game, and any moments of disengagement or confusion. Inter-rater reliability will be calculated using Cohen's kappa.
+Along with the analysis of if a robot is effective in the recorded video, we also want to measure users’ perceptions of robot warmth, competence, and discomfort using Robotic Social Attributes Scale (RoSAS) [8] . This is especially important as Wakey Wakey might be perceived as annoying when waking up people, so we want to understand whether participants interpret the robot as engaging or irritating.
+Our primary dependent variables are time-to-standing (behavioral) and perceived enjoyment and effectiveness (self-report). We do not expect to achieve statistical significance given our sample size, so our analysis will be descriptive and qualitative, focused on identifying interaction patterns and design insights to inform future iterations.
+4.3: Planned Experimental Task List
+Evaluation Task
+Description
+Evaluation Type
+Leader
+Recruit Participants
+Recruit participants from engineering department, focusing on CSE 190/276B classmates and other interested students
+Human-focused
+Everyone
+Audio Quality
+Test the Mini Pupper’s built-in audio system’s ability to produce clear sound for the alarm 
+Robot-focused
+Terri
+Detection Accuracy and Latency for Human Detection
+Simulate various lighting conditions, clothing color, distance to test accuracy of human detection
+Robot-focused
+Estella
+IMU Lift Detection Accuracy
+Test lift detection by having a team member pick up Pupper from various angles and speeds; record true positive rate and any false positives
+Robot-focused
+Christina
+Error Handling and Recovery
+Simulate various errors scenarios, such as sensor failures, connectivity issues, or software crashes, to test the Mini Pupper’s error-handling mechanisms  
+Robot-focused
+Everyone
+Administer pre-survey
+Administer pre-survey to participants to gather information about their current wake-up habits
+Human-focused
+Everyone
+Administer post-survey
+Administer post-survey to participants to gather information about their thoughts on how helpful they think Wakey Wakey is 
+Human-focused
+Everyone
+Administer semi-conducted interview
+Ask participants open-ended questions about the robot for qualitative data
+Human-focused
+Everyone
+Recorded Video Analysis 
+Analyze participants’s behavior during the study
+Human-focused
+Everyone
+
+Figure 4: Detailed breakdown of all the human-focused and robot-focused evaluation tasks
+
+5. Project Timeline & Gantt Chart
+
+
+
+
+Figure 5: Gantt chart
+6. Supply Needs and Costumes
+Object
+Have or need?
+Who has it?
+Pupper
+Need
+Professor Riek
+Raspberry Pis
+Need
+Professor Riek
+Computer (if Pupper can’t run mobile inference)
+Have
+Team members
+“Wake Up” Flag / Sign
+Need
+Team members (DIY)
+Rooster Crown
+Need
+Team members (3D print)
+
+Figure 6: Supply Needs Chart.
+
+Works Cited
+[1] Ham, J., & Midden, C. J. H. (2014). A Persuasive Robot to Stimulate Energy Conservation: The influence of positive and negative social feedback and task similarity on energy-consumption behavior. International Journal of Social Robotics, 6, 163–171. https://doi.org/10.1007/s12369-013-0205-z
+
+[2] Mattingly, S. M., Martinez, G., Young, J., Cain, M. K., & Striegel, A. (2022). Snoozing: An Examination of a Common Method of Waking. Sleep, 45(10), zsac184. https://doi.org/10.1093/sleep/zsac184
+
+[3] Ringe, R., et al. (2025). The Fluffy Tightrope: Examining zoomorphic robot interactions for promoting active behavior in a comfortable setting. In 2025 34th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN) (pp. 736–741). IEEE. https://doi.org/10.1109/RO-MAN63969.2025.11217617
+
+[4] Lee, W.-Y., & Jung, M. (2020). Ludic-HRI: Designing playful experiences with robots. In Companion of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (pp. 582–584). Association for Computing Machinery. https://doi.org/10.1145/3371382.3377429
+
+[5] Berengueres, J., Alsuwairi, F., Zaki, N., & Ng, T. (2013). Gamification of a recycle bin with emoticons. In 2013 8th ACM/IEEE International Conference on Human-Robot Interaction (HRI) (pp. 83–84). IEEE. https://doi.org/10.1109/HRI.2013.6483512
+
+[6] Rich, C., Ponsler, B., Holroyd, A., & Sidner, C. L. (2010). Recognizing engagement in human-robot interaction. In 2010 5th ACM/IEEE International Conference on Human-Robot Interaction (HRI) (pp. 375–382). IEEE. https://doi.org/10.1109/HRI.2010.5453163
+
+[7] Sim, R., & Loo, C. K. (2015). Extensive assessment and evaluation methodologies on assistive social robots for modelling human-robot interaction — A review. Information Sciences, 301, 305–344. https://doi.org/10.1016/j.ins.2014.12.017
+
+[8] Carpinella, C. M., Wyman, A. B., Perez, M. A., & Stroessner, S. J. (2017). The Robotic Social Attributes Scale (RoSAS): Development and validation. In Proceedings of the 2017 ACM/IEEE International Conference on Human-Robot Interaction, 254–262. https://doi.org/10.1145/2909824.3020208
+[9] Bartneck, C., Kulić, D., Croft, E., & Zoghbi, S. (2009). Measurement instruments for the anthropomorphism, animacy, likeability, perceived intelligence, and perceived safety of robots. International Journal of Social Robotics, 1, 71–81. https://doi.org/10.1007/s12369-008-0001-3
+[10] Bradley, M. M., & Lang, P. J. (1994). Measuring emotion: The Self-Assessment Manikin and the semantic differential. Journal of Behavior Therapy and Experimental Psychiatry, 25(1), 49–59. https://doi.org/10.1016/0005-7916(94)90063-9
+[11] Veling, L., & McGinn, C. (2021). Qualitative research in HRI: A review and taxonomy. International Journal of Social Robotics, 13, 1689–1709. https://doi.org/10.1007/s12369-020-00723-z 

@@ -1,0 +1,293 @@
+[0.000000] (-) TimerEvent: {}
+[0.014273] (-) JobUnselected: {'identifier': 'champ'}
+[0.020649] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.023621] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.029121] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.029468] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.029769] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.030029] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.030244] (-) JobUnselected: {'identifier': 'go_pupper_srv'}
+[0.030435] (-) JobUnselected: {'identifier': 'lab2task4'}
+[0.030602] (-) JobUnselected: {'identifier': 'ldlidar_stl_ros2'}
+[0.030796] (-) JobUnselected: {'identifier': 'mini_pupper_2_description'}
+[0.030943] (-) JobUnselected: {'identifier': 'mini_pupper_bringup'}
+[0.033820] (-) JobUnselected: {'identifier': 'mini_pupper_dance'}
+[0.034235] (-) JobUnselected: {'identifier': 'mini_pupper_description'}
+[0.034488] (-) JobUnselected: {'identifier': 'mini_pupper_driver'}
+[0.034688] (-) JobUnselected: {'identifier': 'mini_pupper_interfaces'}
+[0.034902] (-) JobUnselected: {'identifier': 'mini_pupper_music'}
+[0.035315] (-) JobUnselected: {'identifier': 'pupper_interfaces'}
+[0.035726] (lab2task5) JobQueued: {'identifier': 'lab2task5', 'dependencies': OrderedDict([('pupper_interfaces', '/home/ubuntu/ros2_ws/install/pupper_interfaces')])}
+[0.038332] (lab2task5) JobStarted: {'identifier': 'lab2task5'}
+[0.093814] (-) TimerEvent: {}
+[0.195397] (-) TimerEvent: {}
+[0.296719] (-) TimerEvent: {}
+[0.399036] (-) TimerEvent: {}
+[0.500194] (-) TimerEvent: {}
+[0.601946] (-) TimerEvent: {}
+[0.702883] (-) TimerEvent: {}
+[0.803905] (-) TimerEvent: {}
+[0.904865] (-) TimerEvent: {}
+[1.006915] (-) TimerEvent: {}
+[1.108038] (-) TimerEvent: {}
+[1.209034] (-) TimerEvent: {}
+[1.309770] (-) TimerEvent: {}
+[1.410670] (-) TimerEvent: {}
+[1.512359] (-) TimerEvent: {}
+[1.613620] (-) TimerEvent: {}
+[1.714488] (-) TimerEvent: {}
+[1.815414] (-) TimerEvent: {}
+[1.917277] (-) TimerEvent: {}
+[2.018430] (-) TimerEvent: {}
+[2.119394] (-) TimerEvent: {}
+[2.220384] (-) TimerEvent: {}
+[2.321941] (-) TimerEvent: {}
+[2.423303] (-) TimerEvent: {}
+[2.524329] (-) TimerEvent: {}
+[2.625251] (-) TimerEvent: {}
+[2.726143] (-) TimerEvent: {}
+[2.827551] (-) TimerEvent: {}
+[2.928538] (-) TimerEvent: {}
+[3.038289] (-) TimerEvent: {}
+[3.139253] (-) TimerEvent: {}
+[3.240254] (-) TimerEvent: {}
+[3.341437] (-) TimerEvent: {}
+[3.442467] (-) TimerEvent: {}
+[3.543440] (-) TimerEvent: {}
+[3.644517] (-) TimerEvent: {}
+[3.745565] (-) TimerEvent: {}
+[3.846700] (-) TimerEvent: {}
+[3.947707] (-) TimerEvent: {}
+[4.049720] (-) TimerEvent: {}
+[4.150783] (-) TimerEvent: {}
+[4.251763] (-) TimerEvent: {}
+[4.352603] (-) TimerEvent: {}
+[4.453513] (-) TimerEvent: {}
+[4.554404] (-) TimerEvent: {}
+[4.655261] (-) TimerEvent: {}
+[4.756111] (-) TimerEvent: {}
+[4.857346] (-) TimerEvent: {}
+[4.958615] (-) TimerEvent: {}
+[5.059535] (-) TimerEvent: {}
+[5.160458] (-) TimerEvent: {}
+[5.261399] (-) TimerEvent: {}
+[5.363030] (-) TimerEvent: {}
+[5.464098] (-) TimerEvent: {}
+[5.564893] (-) TimerEvent: {}
+[5.665969] (-) TimerEvent: {}
+[5.766836] (-) TimerEvent: {}
+[5.867868] (-) TimerEvent: {}
+[5.968763] (-) TimerEvent: {}
+[6.069701] (-) TimerEvent: {}
+[6.170609] (-) TimerEvent: {}
+[6.271528] (-) TimerEvent: {}
+[6.372875] (-) TimerEvent: {}
+[6.473731] (-) TimerEvent: {}
+[6.574842] (-) TimerEvent: {}
+[6.676246] (-) TimerEvent: {}
+[6.777116] (-) TimerEvent: {}
+[6.878042] (-) TimerEvent: {}
+[6.979348] (-) TimerEvent: {}
+[7.080226] (-) TimerEvent: {}
+[7.181385] (-) TimerEvent: {}
+[7.282379] (-) TimerEvent: {}
+[7.383806] (-) TimerEvent: {}
+[7.484897] (-) TimerEvent: {}
+[7.585858] (-) TimerEvent: {}
+[7.687073] (-) TimerEvent: {}
+[7.789623] (-) TimerEvent: {}
+[7.890673] (-) TimerEvent: {}
+[7.991665] (-) TimerEvent: {}
+[8.106505] (-) TimerEvent: {}
+[8.208994] (-) TimerEvent: {}
+[8.310849] (-) TimerEvent: {}
+[8.413961] (-) TimerEvent: {}
+[8.516117] (-) TimerEvent: {}
+[8.617811] (-) TimerEvent: {}
+[8.718830] (-) TimerEvent: {}
+[8.820043] (-) TimerEvent: {}
+[8.920961] (-) TimerEvent: {}
+[9.022483] (-) TimerEvent: {}
+[9.123500] (-) TimerEvent: {}
+[9.224558] (-) TimerEvent: {}
+[9.325624] (-) TimerEvent: {}
+[9.427010] (-) TimerEvent: {}
+[9.527955] (-) TimerEvent: {}
+[9.629104] (-) TimerEvent: {}
+[9.730108] (-) TimerEvent: {}
+[9.831724] (-) TimerEvent: {}
+[9.932716] (-) TimerEvent: {}
+[10.033823] (-) TimerEvent: {}
+[10.134833] (-) TimerEvent: {}
+[10.236733] (-) TimerEvent: {}
+[10.337642] (-) TimerEvent: {}
+[10.438525] (-) TimerEvent: {}
+[10.539477] (-) TimerEvent: {}
+[10.640330] (-) TimerEvent: {}
+[10.741946] (-) TimerEvent: {}
+[10.842957] (-) TimerEvent: {}
+[10.943951] (-) TimerEvent: {}
+[11.044885] (-) TimerEvent: {}
+[11.146777] (-) TimerEvent: {}
+[11.248823] (-) TimerEvent: {}
+[11.349726] (-) TimerEvent: {}
+[11.450931] (-) TimerEvent: {}
+[11.553921] (-) TimerEvent: {}
+[11.656713] (-) TimerEvent: {}
+[11.759196] (-) TimerEvent: {}
+[11.862793] (-) TimerEvent: {}
+[11.967006] (-) TimerEvent: {}
+[12.070070] (-) TimerEvent: {}
+[12.173412] (-) TimerEvent: {}
+[12.276843] (-) TimerEvent: {}
+[12.379398] (-) TimerEvent: {}
+[12.482388] (-) TimerEvent: {}
+[12.585541] (-) TimerEvent: {}
+[12.689085] (-) TimerEvent: {}
+[12.791414] (-) TimerEvent: {}
+[12.893660] (-) TimerEvent: {}
+[12.996816] (-) TimerEvent: {}
+[13.109874] (-) TimerEvent: {}
+[13.212731] (-) TimerEvent: {}
+[13.314354] (-) TimerEvent: {}
+[13.415536] (-) TimerEvent: {}
+[13.517810] (-) TimerEvent: {}
+[13.622199] (-) TimerEvent: {}
+[13.723502] (-) TimerEvent: {}
+[13.827503] (-) TimerEvent: {}
+[13.930624] (-) TimerEvent: {}
+[14.033364] (-) TimerEvent: {}
+[14.136406] (-) TimerEvent: {}
+[14.238974] (-) TimerEvent: {}
+[14.342656] (-) TimerEvent: {}
+[14.445288] (-) TimerEvent: {}
+[14.548859] (-) TimerEvent: {}
+[14.651910] (-) TimerEvent: {}
+[14.754937] (-) TimerEvent: {}
+[14.857130] (-) TimerEvent: {}
+[14.960217] (-) TimerEvent: {}
+[15.063040] (-) TimerEvent: {}
+[15.166103] (-) TimerEvent: {}
+[15.269674] (-) TimerEvent: {}
+[15.371755] (-) TimerEvent: {}
+[15.474646] (-) TimerEvent: {}
+[15.577180] (-) TimerEvent: {}
+[15.679885] (-) TimerEvent: {}
+[15.782287] (-) TimerEvent: {}
+[15.885012] (-) TimerEvent: {}
+[15.987125] (-) TimerEvent: {}
+[16.088571] (-) TimerEvent: {}
+[16.192232] (-) TimerEvent: {}
+[16.297670] (-) TimerEvent: {}
+[16.399885] (-) TimerEvent: {}
+[16.503458] (-) TimerEvent: {}
+[16.606323] (-) TimerEvent: {}
+[16.709672] (-) TimerEvent: {}
+[16.817030] (-) TimerEvent: {}
+[16.919480] (-) TimerEvent: {}
+[17.022461] (-) TimerEvent: {}
+[17.126089] (-) TimerEvent: {}
+[17.229754] (-) TimerEvent: {}
+[17.304960] (lab2task5) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lab2task5', 'build', '--build-base', '/home/ubuntu/ros2_ws/build/lab2task5/build', 'install', '--record', '/home/ubuntu/ros2_ws/build/lab2task5/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros2_ws/src/lab2task5', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/ros2_ws/install/pupper_interfaces/lib:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib:/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/ros2_ws/src/lab2task5/lab2task5', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3385', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros2_ws/install:/home/ubuntu/ros2_ws/src/lab2task4/lab2task4/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ubuntu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'WINDOWPATH': '2', 'PATH': '/home/ubuntu/ros2_ws/install/champ_base/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/cse-wifi-pupper15:@/tmp/.ICE-unix/3054,unix/cse-wifi-pupper15:/tmp/.ICE-unix/3054', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3f447b76_feef_4748_909d_16c77b98d605', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.77', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/lab2task5:/home/ubuntu/ros2_ws/install/lab2task4:/home/ubuntu/ros2_ws/install/go_pupper_srv:/home/ubuntu/ros2_ws/install/pupper_interfaces:/home/ubuntu/ros2_ws/install/mini_pupper_music:/home/ubuntu/ros2_ws/install/mini_pupper_dance:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces:/home/ubuntu/ros2_ws/install/mini_pupper_driver:/home/ubuntu/ros2_ws/install/mini_pupper_description:/home/ubuntu/ros2_ws/install/mini_pupper_bringup:/home/ubuntu/ros2_ws/install/mini_pupper_2_description:/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2:/home/ubuntu/ros2_ws/install/champ_teleop:/home/ubuntu/ros2_ws/install/champ_bringup:/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ_config:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ubuntu/ros2_ws/build/lab2task5', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros2_ws/build/lab2task5/prefix_override:/home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/pupper_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/mini_pupper_dance/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/ros2_ws/install/mini_pupper_driver/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/champ_bringup/local/lib/python3.10/dist-packages:/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/pupper_interfaces:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces:/home/ubuntu/ros2_ws/install/mini_pupper_description:/home/ubuntu/ros2_ws/install/mini_pupper_bringup:/home/ubuntu/ros2_ws/install/mini_pupper_2_description:/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2:/home/ubuntu/ros2_ws/install/champ_teleop:/home/ubuntu/ros2_ws/install/champ_bringup:/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ_config:/home/ubuntu/ros2_ws/install/champ'}, 'shell': False}
+[17.332449] (-) TimerEvent: {}
+[17.433462] (-) TimerEvent: {}
+[17.534373] (-) TimerEvent: {}
+[17.635266] (-) TimerEvent: {}
+[17.736164] (-) TimerEvent: {}
+[17.837215] (-) TimerEvent: {}
+[17.938150] (-) TimerEvent: {}
+[18.038994] (-) TimerEvent: {}
+[18.153227] (-) TimerEvent: {}
+[18.254157] (-) TimerEvent: {}
+[18.355219] (-) TimerEvent: {}
+[18.456812] (-) TimerEvent: {}
+[18.557790] (-) TimerEvent: {}
+[18.659588] (-) TimerEvent: {}
+[18.761820] (-) TimerEvent: {}
+[18.863715] (-) TimerEvent: {}
+[18.964812] (-) TimerEvent: {}
+[19.065790] (-) TimerEvent: {}
+[19.167353] (-) TimerEvent: {}
+[19.268508] (-) TimerEvent: {}
+[19.369482] (-) TimerEvent: {}
+[19.470450] (-) TimerEvent: {}
+[19.571381] (-) TimerEvent: {}
+[19.672382] (-) TimerEvent: {}
+[19.773379] (-) TimerEvent: {}
+[19.874444] (-) TimerEvent: {}
+[19.975514] (-) TimerEvent: {}
+[20.076576] (-) TimerEvent: {}
+[20.177454] (-) TimerEvent: {}
+[20.278310] (-) TimerEvent: {}
+[20.379924] (-) TimerEvent: {}
+[20.480899] (-) TimerEvent: {}
+[20.582127] (-) TimerEvent: {}
+[20.683058] (-) TimerEvent: {}
+[20.784073] (-) TimerEvent: {}
+[20.884881] (-) TimerEvent: {}
+[20.985753] (-) TimerEvent: {}
+[21.087581] (-) TimerEvent: {}
+[21.188544] (-) TimerEvent: {}
+[21.289476] (-) TimerEvent: {}
+[21.390321] (-) TimerEvent: {}
+[21.491734] (-) TimerEvent: {}
+[21.594859] (-) TimerEvent: {}
+[21.698692] (-) TimerEvent: {}
+[21.801540] (-) TimerEvent: {}
+[21.904036] (-) TimerEvent: {}
+[22.010005] (-) TimerEvent: {}
+[22.114514] (-) TimerEvent: {}
+[22.219694] (-) TimerEvent: {}
+[22.320833] (-) TimerEvent: {}
+[22.423432] (-) TimerEvent: {}
+[22.526777] (-) TimerEvent: {}
+[22.630557] (-) TimerEvent: {}
+[22.731998] (-) TimerEvent: {}
+[22.835260] (-) TimerEvent: {}
+[22.938374] (-) TimerEvent: {}
+[23.040709] (-) TimerEvent: {}
+[23.143287] (-) TimerEvent: {}
+[23.246658] (-) TimerEvent: {}
+[23.349680] (-) TimerEvent: {}
+[23.452258] (-) TimerEvent: {}
+[23.554214] (-) TimerEvent: {}
+[23.657290] (-) TimerEvent: {}
+[23.759447] (-) TimerEvent: {}
+[23.786778] (lab2task5) StdoutLine: {'line': b'running egg_info\n'}
+[23.805559] (lab2task5) StdoutLine: {'line': b'writing ../../build/lab2task5/lab2task5.egg-info/PKG-INFO\n'}
+[23.813948] (lab2task5) StdoutLine: {'line': b'writing dependency_links to ../../build/lab2task5/lab2task5.egg-info/dependency_links.txt\n'}
+[23.819358] (lab2task5) StdoutLine: {'line': b'writing entry points to ../../build/lab2task5/lab2task5.egg-info/entry_points.txt\n'}
+[23.825002] (lab2task5) StdoutLine: {'line': b'writing requirements to ../../build/lab2task5/lab2task5.egg-info/requires.txt\n'}
+[23.834649] (lab2task5) StdoutLine: {'line': b'writing top-level names to ../../build/lab2task5/lab2task5.egg-info/top_level.txt\n'}
+[23.859638] (-) TimerEvent: {}
+[23.875379] (lab2task5) StdoutLine: {'line': b"reading manifest file '../../build/lab2task5/lab2task5.egg-info/SOURCES.txt'\n"}
+[23.885239] (lab2task5) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[23.913944] (lab2task5) StdoutLine: {'line': b"writing manifest file '../../build/lab2task5/lab2task5.egg-info/SOURCES.txt'\n"}
+[23.920440] (lab2task5) StdoutLine: {'line': b'running build\n'}
+[23.923310] (lab2task5) StdoutLine: {'line': b'running build_py\n'}
+[23.939774] (lab2task5) StdoutLine: {'line': b'running install\n'}
+[23.949867] (lab2task5) StdoutLine: {'line': b'running install_lib\n'}
+[23.959865] (-) TimerEvent: {}
+[24.008604] (lab2task5) StdoutLine: {'line': b'running install_data\n'}
+[24.018175] (lab2task5) StdoutLine: {'line': b'running install_egg_info\n'}
+[24.058646] (lab2task5) StdoutLine: {'line': b"removing '/home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[24.060062] (-) TimerEvent: {}
+[24.074247] (lab2task5) StdoutLine: {'line': b'Copying ../../build/lab2task5/lab2task5.egg-info to /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5-0.0.0-py3.10.egg-info\n'}
+[24.110389] (lab2task5) StdoutLine: {'line': b'running install_scripts\n'}
+[24.160261] (-) TimerEvent: {}
+[24.261918] (-) TimerEvent: {}
+[24.362887] (-) TimerEvent: {}
+[24.463909] (-) TimerEvent: {}
+[24.489432] (lab2task5) StdoutLine: {'line': b'Installing client script to /home/ubuntu/ros2_ws/install/lab2task5/lib/lab2task5\n'}
+[24.491319] (lab2task5) StdoutLine: {'line': b'Installing salsa script to /home/ubuntu/ros2_ws/install/lab2task5/lib/lab2task5\n'}
+[24.528124] (lab2task5) StdoutLine: {'line': b'Installing service script to /home/ubuntu/ros2_ws/install/lab2task5/lib/lab2task5\n'}
+[24.532071] (lab2task5) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros2_ws/build/lab2task5/install.log'\n"}
+[24.564209] (-) TimerEvent: {}
+[24.665689] (-) TimerEvent: {}
+[24.766977] (-) TimerEvent: {}
+[24.862055] (lab2task5) CommandEnded: {'returncode': 0}
+[24.868870] (-) TimerEvent: {}
+[24.970141] (-) TimerEvent: {}
+[25.075083] (-) TimerEvent: {}
+[25.105297] (lab2task5) JobEnded: {'identifier': 'lab2task5', 'rc': 0}
+[25.123522] (-) EventReactorShutdown: {}

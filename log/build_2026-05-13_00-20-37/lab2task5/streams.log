@@ -1,0 +1,27 @@
+[4.549s] Invoking command in '/home/ubuntu/ros2_ws/src/lab2task5': PYTHONPATH=/home/ubuntu/ros2_ws/build/lab2task5/prefix_override:/home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab2task5 build --build-base /home/ubuntu/ros2_ws/build/lab2task5/build install --record /home/ubuntu/ros2_ws/build/lab2task5/install.log --single-version-externally-managed install_data
+[6.395s] running egg_info
+[6.397s] writing ../../build/lab2task5/lab2task5.egg-info/PKG-INFO
+[6.399s] writing dependency_links to ../../build/lab2task5/lab2task5.egg-info/dependency_links.txt
+[6.400s] writing entry points to ../../build/lab2task5/lab2task5.egg-info/entry_points.txt
+[6.401s] writing requirements to ../../build/lab2task5/lab2task5.egg-info/requires.txt
+[6.402s] writing top-level names to ../../build/lab2task5/lab2task5.egg-info/top_level.txt
+[6.413s] reading manifest file '../../build/lab2task5/lab2task5.egg-info/SOURCES.txt'
+[6.415s] adding license file 'LICENSE'
+[6.418s] writing manifest file '../../build/lab2task5/lab2task5.egg-info/SOURCES.txt'
+[6.419s] running build
+[6.420s] running build_py
+[6.421s] copying lab2task5/client_go_pupper.py -> /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5
+[6.426s] running install
+[6.427s] running install_lib
+[6.432s] copying /home/ubuntu/ros2_ws/build/lab2task5/build/lib/lab2task5/client_go_pupper.py -> /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5
+[6.436s] byte-compiling /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5/client_go_pupper.py to client_go_pupper.cpython-310.pyc
+[6.441s] running install_data
+[6.442s] running install_egg_info
+[6.450s] removing '/home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5-0.0.0-py3.10.egg-info' (and everything under it)
+[6.452s] Copying ../../build/lab2task5/lab2task5.egg-info to /home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages/lab2task5-0.0.0-py3.10.egg-info
+[6.459s] running install_scripts
+[6.569s] Installing client script to /home/ubuntu/ros2_ws/install/lab2task5/lib/lab2task5
+[6.570s] Installing salsa script to /home/ubuntu/ros2_ws/install/lab2task5/lib/lab2task5
+[6.570s] Installing service script to /home/ubuntu/ros2_ws/install/lab2task5/lib/lab2task5
+[6.571s] writing list of installed files to '/home/ubuntu/ros2_ws/build/lab2task5/install.log'
+[6.728s] Invoked command in '/home/ubuntu/ros2_ws/src/lab2task5' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/lab2task5/prefix_override:/home/ubuntu/ros2_ws/install/lab2task5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab2task5 build --build-base /home/ubuntu/ros2_ws/build/lab2task5/build install --record /home/ubuntu/ros2_ws/build/lab2task5/install.log --single-version-externally-managed install_data

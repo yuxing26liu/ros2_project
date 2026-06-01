@@ -1,0 +1,70 @@
+[0.029s] Invoking command in '/home/ubuntu/ros2_ws/build/champ_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_description
+[1.085s] -- The C compiler identification is GNU 11.4.0
+[1.944s] -- The CXX compiler identification is GNU 11.4.0
+[1.969s] -- Detecting C compiler ABI info
+[2.247s] -- Detecting C compiler ABI info - done
+[2.270s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.271s] -- Detecting C compile features
+[2.273s] -- Detecting C compile features - done
+[2.283s] -- Detecting CXX compiler ABI info
+[2.593s] -- Detecting CXX compiler ABI info - done
+[2.617s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.618s] -- Detecting CXX compile features
+[2.620s] -- Detecting CXX compile features - done
+[2.641s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.327s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.590s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.833s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.116s] -- Configuring done
+[4.134s] -- Generating done
+[4.137s] -- Build files have been written to: /home/ubuntu/ros2_ws/build/champ_description
+[4.151s] Invoked command in '/home/ubuntu/ros2_ws/build/champ_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/champ/champ/champ_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/champ_description
+[4.158s] Invoking command in '/home/ubuntu/ros2_ws/build/champ_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_description
+[4.289s] Invoked command in '/home/ubuntu/ros2_ws/build/champ_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/champ_description
+[4.380s] Invoking command in '/home/ubuntu/ros2_ws/build/champ_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_description
+[4.405s] -- Install configuration: ""
+[4.406s] -- Execute custom install script
+[4.408s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/launch/description.launch
+[4.438s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/launch/description.launch.py
+[4.467s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/launch/view_urdf.launch
+[4.497s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/rviz/urdf_viewer.rviz
+[4.528s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/arm/base.stl
+[4.558s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/arm/lower_arm.stl
+[4.587s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/arm/upper_arm.stl
+[4.616s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/arm/wrist1.stl
+[4.645s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/arm/wrist2.stl
+[4.674s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/asus_camera_simple.dae
+[4.704s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/base.stl
+[4.734s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/base_simple.stl
+[4.762s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/hip.stl
+[4.792s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/hokuyo_utm_30lx.dae
+[4.821s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/lower_leg.stl
+[4.850s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/lower_leg_simple.stl
+[4.879s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/upper_leg.stl
+[4.908s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/meshes/upper_leg_simple.stl
+[4.942s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/accessories.urdf.xacro
+[4.972s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/asus_camera.urdf.xacro
+[5.002s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/champ.urdf
+[5.031s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/champ.urdf.xacro
+[5.060s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/champ_arm.urdf
+[5.090s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/champ_velodyne.urdf
+[5.119s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/gen_urdf
+[5.149s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/hokuyo_utm30lx.urdf.xacro
+[5.178s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/leg.urdf.xacro
+[5.207s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/urdf/properties.urdf.xacro
+[5.238s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/ament_index/resource_index/package_run_dependencies/champ_description
+[5.267s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/ament_index/resource_index/parent_prefix_path/champ_description
+[5.297s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/environment/ament_prefix_path.sh
+[5.327s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/environment/ament_prefix_path.dsv
+[5.357s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/environment/path.sh
+[5.402s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/environment/path.dsv
+[5.432s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/local_setup.bash
+[5.461s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/local_setup.sh
+[5.490s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/local_setup.zsh
+[5.519s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/local_setup.dsv
+[5.549s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.dsv
+[5.578s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/ament_index/resource_index/packages/champ_description
+[5.609s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/cmake/champ_descriptionConfig.cmake
+[5.638s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/cmake/champ_descriptionConfig-version.cmake
+[5.667s] -- Symlinking: /home/ubuntu/ros2_ws/install/champ_description/share/champ_description/package.xml
+[5.703s] Invoked command in '/home/ubuntu/ros2_ws/build/champ_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/champ_description

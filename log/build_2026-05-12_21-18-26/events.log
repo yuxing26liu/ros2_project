@@ -1,0 +1,113 @@
+[0.000000] (-) TimerEvent: {}
+[0.002020] (-) JobUnselected: {'identifier': 'champ'}
+[0.002164] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.002261] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.002352] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.002441] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.002530] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.002617] (-) JobUnselected: {'identifier': 'champ_teleop'}
+[0.002703] (-) JobUnselected: {'identifier': 'go_pupper_srv'}
+[0.002788] (-) JobUnselected: {'identifier': 'ldlidar_stl_ros2'}
+[0.002874] (-) JobUnselected: {'identifier': 'mini_pupper_2_description'}
+[0.002960] (-) JobUnselected: {'identifier': 'mini_pupper_bringup'}
+[0.003047] (-) JobUnselected: {'identifier': 'mini_pupper_dance'}
+[0.003134] (-) JobUnselected: {'identifier': 'mini_pupper_description'}
+[0.003221] (-) JobUnselected: {'identifier': 'mini_pupper_driver'}
+[0.003307] (-) JobUnselected: {'identifier': 'mini_pupper_interfaces'}
+[0.003392] (-) JobUnselected: {'identifier': 'mini_pupper_music'}
+[0.003478] (-) JobUnselected: {'identifier': 'pupper_interfaces'}
+[0.003572] (lab2task4) JobQueued: {'identifier': 'lab2task4', 'dependencies': OrderedDict([('pupper_interfaces', '/home/ubuntu/ros2_ws/install/pupper_interfaces')])}
+[0.003679] (lab2task4) JobStarted: {'identifier': 'lab2task4'}
+[0.099018] (-) TimerEvent: {}
+[0.199649] (-) TimerEvent: {}
+[0.300379] (-) TimerEvent: {}
+[0.401172] (-) TimerEvent: {}
+[0.502160] (-) TimerEvent: {}
+[0.603078] (-) TimerEvent: {}
+[0.703885] (-) TimerEvent: {}
+[0.804708] (-) TimerEvent: {}
+[0.905501] (-) TimerEvent: {}
+[1.006333] (-) TimerEvent: {}
+[1.107136] (-) TimerEvent: {}
+[1.207775] (-) TimerEvent: {}
+[1.308463] (-) TimerEvent: {}
+[1.409106] (-) TimerEvent: {}
+[1.509819] (-) TimerEvent: {}
+[1.610492] (-) TimerEvent: {}
+[1.711196] (-) TimerEvent: {}
+[1.811915] (-) TimerEvent: {}
+[1.912684] (-) TimerEvent: {}
+[2.013686] (-) TimerEvent: {}
+[2.114621] (-) TimerEvent: {}
+[2.215308] (-) TimerEvent: {}
+[2.316023] (-) TimerEvent: {}
+[2.416779] (-) TimerEvent: {}
+[2.517453] (-) TimerEvent: {}
+[2.618128] (-) TimerEvent: {}
+[2.718822] (-) TimerEvent: {}
+[2.819474] (-) TimerEvent: {}
+[2.920209] (-) TimerEvent: {}
+[3.020880] (-) TimerEvent: {}
+[3.121530] (-) TimerEvent: {}
+[3.222170] (-) TimerEvent: {}
+[3.322923] (-) TimerEvent: {}
+[3.423623] (-) TimerEvent: {}
+[3.524322] (-) TimerEvent: {}
+[3.624988] (-) TimerEvent: {}
+[3.725659] (-) TimerEvent: {}
+[3.826319] (-) TimerEvent: {}
+[3.927047] (-) TimerEvent: {}
+[4.027750] (-) TimerEvent: {}
+[4.128510] (-) TimerEvent: {}
+[4.229179] (-) TimerEvent: {}
+[4.329824] (-) TimerEvent: {}
+[4.430502] (-) TimerEvent: {}
+[4.531253] (-) TimerEvent: {}
+[4.632016] (-) TimerEvent: {}
+[4.732947] (-) TimerEvent: {}
+[4.757733] (lab2task4) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lab2task4', 'build', '--build-base', '/home/ubuntu/ros2_ws/build/lab2task4/build', 'install', '--record', '/home/ubuntu/ros2_ws/build/lab2task4/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros2_ws/src/lab2task4', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/ros2_ws/install/pupper_interfaces/lib:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/lib:/home/ubuntu/ros2_ws/install/champ_base/lib:/home/ubuntu/ros2_ws/install/champ_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ubuntu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3385', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros2_ws/install:/home/ubuntu/ros2_ws/src/lab2task4/lab2task4/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ubuntu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'WINDOWPATH': '2', 'PATH': '/home/ubuntu/ros2_ws/install/champ_base/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/cse-wifi-pupper15:@/tmp/.ICE-unix/3054,unix/cse-wifi-pupper15:/tmp/.ICE-unix/3054', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f7f98f7a_8753_493c_baa6_3b3246c9ef50', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.77', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/lab2task4:/home/ubuntu/ros2_ws/install/go_pupper_srv:/home/ubuntu/ros2_ws/install/pupper_interfaces:/home/ubuntu/ros2_ws/install/mini_pupper_music:/home/ubuntu/ros2_ws/install/mini_pupper_dance:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces:/home/ubuntu/ros2_ws/install/mini_pupper_driver:/home/ubuntu/ros2_ws/install/mini_pupper_description:/home/ubuntu/ros2_ws/install/mini_pupper_bringup:/home/ubuntu/ros2_ws/install/mini_pupper_2_description:/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2:/home/ubuntu/ros2_ws/install/champ_teleop:/home/ubuntu/ros2_ws/install/champ_bringup:/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ_config:/home/ubuntu/ros2_ws/install/champ:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ubuntu/ros2_ws/build/lab2task4', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros2_ws/build/lab2task4/prefix_override:/home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/go_pupper_srv/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/pupper_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/ros2_ws/build/mini_pupper_music:/home/ubuntu/ros2_ws/install/mini_pupper_music/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/build/mini_pupper_dance:/home/ubuntu/ros2_ws/install/mini_pupper_dance/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/ros2_ws/build/mini_pupper_driver:/home/ubuntu/ros2_ws/install/mini_pupper_driver/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/champ_bringup/local/lib/python3.10/dist-packages:/home/ubuntu/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/pupper_interfaces:/home/ubuntu/ros2_ws/install/mini_pupper_interfaces:/home/ubuntu/ros2_ws/install/mini_pupper_description:/home/ubuntu/ros2_ws/install/mini_pupper_bringup:/home/ubuntu/ros2_ws/install/mini_pupper_2_description:/home/ubuntu/ros2_ws/install/ldlidar_stl_ros2:/home/ubuntu/ros2_ws/install/champ_teleop:/home/ubuntu/ros2_ws/install/champ_bringup:/home/ubuntu/ros2_ws/install/champ_base:/home/ubuntu/ros2_ws/install/champ_msgs:/home/ubuntu/ros2_ws/install/champ_description:/home/ubuntu/ros2_ws/install/champ_config:/home/ubuntu/ros2_ws/install/champ'}, 'shell': False}
+[4.833111] (-) TimerEvent: {}
+[4.933850] (-) TimerEvent: {}
+[5.034561] (-) TimerEvent: {}
+[5.135279] (-) TimerEvent: {}
+[5.235952] (-) TimerEvent: {}
+[5.336627] (-) TimerEvent: {}
+[5.437287] (-) TimerEvent: {}
+[5.537962] (-) TimerEvent: {}
+[5.638637] (-) TimerEvent: {}
+[5.739306] (-) TimerEvent: {}
+[5.840043] (-) TimerEvent: {}
+[5.940729] (-) TimerEvent: {}
+[6.041440] (-) TimerEvent: {}
+[6.142177] (-) TimerEvent: {}
+[6.242862] (-) TimerEvent: {}
+[6.343563] (-) TimerEvent: {}
+[6.369553] (lab2task4) StdoutLine: {'line': b'running egg_info\n'}
+[6.372810] (lab2task4) StdoutLine: {'line': b'writing ../../build/lab2task4/lab2task4.egg-info/PKG-INFO\n'}
+[6.374619] (lab2task4) StdoutLine: {'line': b'writing dependency_links to ../../build/lab2task4/lab2task4.egg-info/dependency_links.txt\n'}
+[6.375652] (lab2task4) StdoutLine: {'line': b'writing entry points to ../../build/lab2task4/lab2task4.egg-info/entry_points.txt\n'}
+[6.376707] (lab2task4) StdoutLine: {'line': b'writing requirements to ../../build/lab2task4/lab2task4.egg-info/requires.txt\n'}
+[6.378127] (lab2task4) StdoutLine: {'line': b'writing top-level names to ../../build/lab2task4/lab2task4.egg-info/top_level.txt\n'}
+[6.391402] (lab2task4) StdoutLine: {'line': b"reading manifest file '../../build/lab2task4/lab2task4.egg-info/SOURCES.txt'\n"}
+[6.392986] (lab2task4) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[6.395766] (lab2task4) StdoutLine: {'line': b"writing manifest file '../../build/lab2task4/lab2task4.egg-info/SOURCES.txt'\n"}
+[6.396559] (lab2task4) StdoutLine: {'line': b'running build\n'}
+[6.397090] (lab2task4) StdoutLine: {'line': b'running build_py\n'}
+[6.398990] (lab2task4) StdoutLine: {'line': b'running install\n'}
+[6.400379] (lab2task4) StdoutLine: {'line': b'running install_lib\n'}
+[6.407936] (lab2task4) StdoutLine: {'line': b'running install_data\n'}
+[6.408820] (lab2task4) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.417044] (lab2task4) StdoutLine: {'line': b"removing '/home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages/lab2task4-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.418962] (lab2task4) StdoutLine: {'line': b'Copying ../../build/lab2task4/lab2task4.egg-info to /home/ubuntu/ros2_ws/install/lab2task4/lib/python3.10/site-packages/lab2task4-0.0.0-py3.10.egg-info\n'}
+[6.425921] (lab2task4) StdoutLine: {'line': b'running install_scripts\n'}
+[6.443770] (-) TimerEvent: {}
+[6.525155] (lab2task4) StdoutLine: {'line': b'Installing client script to /home/ubuntu/ros2_ws/install/lab2task4/lib/lab2task4\n'}
+[6.526119] (lab2task4) StdoutLine: {'line': b'Installing salsa script to /home/ubuntu/ros2_ws/install/lab2task4/lib/lab2task4\n'}
+[6.526995] (lab2task4) StdoutLine: {'line': b'Installing service script to /home/ubuntu/ros2_ws/install/lab2task4/lib/lab2task4\n'}
+[6.529256] (lab2task4) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros2_ws/build/lab2task4/install.log'\n"}
+[6.544054] (-) TimerEvent: {}
+[6.645208] (-) TimerEvent: {}
+[6.672944] (lab2task4) CommandEnded: {'returncode': 0}
+[6.741958] (lab2task4) JobEnded: {'identifier': 'lab2task4', 'rc': 0}
+[6.745426] (-) TimerEvent: {}
+[6.745786] (-) EventReactorShutdown: {}
