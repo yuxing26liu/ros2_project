@@ -12,8 +12,11 @@ import RPi.GPIO as GPIO
 from ament_index_python.packages import get_package_share_directory
 
 from PIL import Image
-from resizeimage import resizeimage
-from MangDang.mini_pupper.display import Display
+
+try:
+    from MangDang.mini_pupper.display import Display
+except ImportError:
+    Display = None
 
 
 class GameNode(Node):
@@ -56,7 +59,7 @@ class GameNode(Node):
         GPIO.setup(self.right_pin, GPIO.IN)
 
         # Display + assets setup
-        self.display = Display()
+        self.display = Display() if Display is not None else None
 
         self.package_share = get_package_share_directory('wakey_wakey')
         self.image_dir = os.path.join(self.package_share, 'assets', 'images')
@@ -66,7 +69,7 @@ class GameNode(Node):
         self.action_images = {
             'RIGHT': 'arrow_upper_left.png',
             'LEFT': 'arrow_upper_right.png',
-            'FRONT': 'arrow_down.png',
+            'FRONT': 'arrow_up.png',
         }
 
         # Default Pupper facial expression images
@@ -513,26 +516,37 @@ class GameNode(Node):
         self.setImage(image_name)
 
     def setImage(self, image_name: str):
+        if self.display is None:
+            self.get_logger().warn('Display library unavailable. Skipping image display.')
+            return
+
         image_path = os.path.join(self.image_dir, image_name)
 
         if not os.path.exists(image_path):
             self.get_logger().warn(f'Image not found: {image_path}')
             return
 
-        MAX_WIDTH = 320
+        try:
+            prepared_path = self.prepare_display_image(image_path)
+            self.display.show_image(prepared_path)
+        except Exception as exc:
+            self.get_logger().error(f'Failed to display image {image_path}: {exc}')
 
-        imgFile = Image.open(image_path)
+    def prepare_display_image(self, image_path: str):
+        display_width = 320
+        display_height = 240
 
-        if imgFile.format == 'PNG':
-            if imgFile.mode != 'RGBA':
-                imgFile = imgFile.convert("RGBA")
+        img = Image.open(image_path).convert('RGBA')
+        img.thumbnail((display_width, display_height), Image.Resampling.LANCZOS)
 
-        imgFile = resizeimage.resize_width(imgFile, MAX_WIDTH)
+        canvas = Image.new('RGBA', (display_width, display_height), (255, 255, 255, 255))
+        x = (display_width - img.width) // 2
+        y = (display_height - img.height) // 2
+        canvas.paste(img, (x, y), img)
 
-        newFileLoc = '/tmp/wakey_wakey_face.png'
-
-        imgFile.save(newFileLoc, imgFile.format)
-        self.display.show_image(newFileLoc)
+        output_path = '/tmp/wakey_wakey_game_face.png'
+        canvas.save(output_path, 'PNG')
+        return output_path
 
     # ----------------------------------------------------------------------
     # Sound placeholders
